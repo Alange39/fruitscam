@@ -25,14 +25,14 @@ if (isset($_POST['sub'])) {
     if (in_array($extention,$extentionutilise)) {
         $uniqname=uniqid("",true);
         $filename=$uniqname.'.'.$extention;
-        
+
         //envoyer la photo charger dans le dossier upload
         move_uploaded_file($tmpname,'./upload/'.$filename);
     }
  
     //insertion des information dans la bd
     try {
-        $stmt= $conn->prepare("INSERT INTO produits (photos,noms,prix,descriptions,ingredient,quantites,categories) VALUES (?,?,?,?,?,?,?)");
+        $stmt= $conn->prepare("INSERT INTO produits (photos,noms,prix,descriptions,ingredient,quantites,categoties) VALUES (?,?,?,?,?,?,?)");
         $stmt->execute(array($filename,$nom,$prix,$descript,$ingeredient,$quantite,$categ));
     } catch (PDOException $e) {
         echo "error". $e->getMessage();
