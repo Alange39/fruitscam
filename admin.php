@@ -1,4 +1,4 @@
-
+<?php    require "connect_to_bd.php";       ?>
 
 <!DOCTYPE html>
  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -13,5 +13,6 @@
 
 
     <?php include_once"tableau.php";?>
+
 </body>
 </html>
