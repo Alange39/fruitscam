@@ -12,10 +12,7 @@
             padding: 0;
         }
         .slider {
-            /* position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: auto; */
+             width: 1500px;
             overflow: hidden;
         }
         .slides {
@@ -28,7 +25,9 @@
             position: relative;
         }
         .slide img {
-           background-size: coveer;
+           background-size: cover;
+            width: 1500px;
+            height: 800px;
         }
         .text {
             position: absolute;
@@ -55,11 +54,11 @@
             <div class="text">texte 1</div>
         </div>
         <div class="slide">
-            <img src="assets/images/Usine-fruits.png" alt="">
+            <img src="assets/images/images.jpg" alt="">
             <div class="text">texte 2</div>
         </div>
         <div class="slide">
-            <img src="assets/images/ravitaillement.webp" alt="">
+            <img src="assets/images/mangoes.jpg" alt="">
             <div class="text">texte 3</div>
         </div>
     </div>

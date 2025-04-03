@@ -14,45 +14,55 @@
 <body >
 
    
-<!-- section premierement visible  -->
-<?php  
+<!-- slider  -->
 
-function slide(){
-    $tab = ['assets/images/controle.png','assets/images/mangoes.jpg', 'assets/images/Usine-fruits.png'];
-    $taille=count($tab);
-    $i=0;
-     while ($i < $taille) {
-       echo $tab[$i];
-       $i++;
-       if ($i=$taille-1) {
-        $i=0;
-       }
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="assets/images/bou.png" alt="">
+            <div class="text">texte 1</div>
+             <div class="text">texte 2</div>
+             <div class=" ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
+              <button class="w-[15px] h-[15px] bg-black rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button  class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+            </div>
        
-     }
-  }
-  
-  echo$taille
-
-
-?>
-
-
-
-
-<!-- titres -->
- <h1 class="text-center text-bold text-3xl max-md:text-[15px] pt-[30px]"> DESCRIPTION DE L'ENTREPRISE</h1>
- <h3 class="text-center text-bold text-xl max-md:text-[13px] pt-[20px]">L'ADMINISTRATION FRUITSCAM</h3>
-
- <!-- ecritures sur l'image -->
-  <section class="w-[900px]  ml-[300px] border-2 border-yellow-400  max-md:h-[100px] h-[200px]  bg-gray-300 max-md:text-[13px] max-md:ml-[55px] 
-  max-md:w-[280px] opacity-[65%] text-[23px] text-green-600 justify-center max-md:mt-[120px]  mt-[180px] mb-[80px]">
-    <div class="justify-center ">
-      <p class="text-center opacity-[100%] pt-[50px]  max-md:px-[20px] max-md:py-[10px] ">Visitez notre boutique a Messes des Officiers, afin de decouvrir notre selection de jus naturels, sirops et vins prepares avec des ingredients de qualite! </p>
+        </div>
+        <div class="slide">
+            <img src="assets/images/coco.jpg" alt="">
+            <div class="text">texte 2</div>
+             <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-black rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button  class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/images/mangoes.jpg" alt="">
+            <div class="text">texte 3</div>
+             <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
+              <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-black rounded-full "></button>
+              <button  class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+            </div>
+        </div>
+         <div class="slide">
+            <img src="assets/images/fruits.jpg" alt="">
+            <div class="text">texte 4</div>
+               <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
+              <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
+              <button  class="w-[15px] h-[15px] bg-black rounded-full "></button>
+            </div>
+        </div>
     </div>
+</div>
 
-  </section>
-
-  </section>
 
   <!-- premiere div apres le slider -->
 
@@ -232,7 +242,7 @@ Ces employés, soucieux de l'environnement, s'investissent dans des actions éco
      <!-- derniere partie avant le footer, concernant le speech de la DG -->
 
      <section class="bg-green-600">
-      <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full absolute items-center mt-[-70px] ml-[45%]  max-md:ml-[40%]">
+      <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full  items-center mt-[-70px] ml-[45%]  max-md:ml-[40%]">
       <div class="pt-[120px] pb-[40px] w-[1270px] pl-[210px] text-center text-white max-md:text-[10px] max-md:pl-[20px]  max-md:w-[350px]">
         <p>
           Bienvenue chez Fruitscam ! <br> 
@@ -243,8 +253,23 @@ Cordialement, <br> BAYEMI Francoise <br> Fruitscam
         </p>
       </div>
      </section>
-    <!-- Bootstrap JS et dépendances -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+ 
+     <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        const offset = index * -100;
+        document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 4000); // Change slide every 3 seconds
+</script>
 </body>
 </html>

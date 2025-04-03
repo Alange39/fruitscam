@@ -1,3 +1,49 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .slider {
+             width: 1500px;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+        }
+        .slide {
+            min-width: 100%;
+            position: relative;
+        }
+        .slide img {
+           background-size: cover;
+            width: 1500px;
+            height: 800px;
+        }
+        .text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .text {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+
+
+
+
+
+
+
+
+
 /* Debut du header   */
 .navbar{
     background-color: #2D8740 !important;
