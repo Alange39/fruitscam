@@ -19,7 +19,7 @@
 <div class="slider">
     <div class="slides">
         <div class="slide">
-            <img src="assets/images/bou.png" alt="">
+            <img src="assets/images/jus-fruits.jpg" alt="">
            
              <div class=" ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px] bg-black rounded-full "></button>
@@ -30,7 +30,7 @@
        
         </div>
         <div class="slide">
-            <img src="assets/images/coco.jpg" alt="">
+            <img src="assets/images/gingembre.jpg" alt="">
            
              <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="slide">
-            <img src="assets/images/mangoes.jpg" alt="">
+            <img src="assets/images/WhatsApp Image 2025-03-28 à 17.52.32_f84f300d.jpg" alt="">
             
              <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
@@ -50,7 +50,7 @@
             </div>
         </div>
          <div class="slide">
-            <img src="assets/images/fruits.jpg" alt="">
+            <img src="assets/images/boutiq.jpg" alt="">
            
                <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
