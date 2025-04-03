@@ -8,5 +8,9 @@
 </head>
 <body class="bg-[url('assets/images/ananas-large.jpg')]">
     <h1>BIENVENUE</h1>
+
+    <?php
+        include_once "tableau.php"
+    ?>
 </body>
 </html>
