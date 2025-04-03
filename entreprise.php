@@ -12,7 +12,7 @@
   <title>Document</title>
 </head>
 <body >
-
+      <?php include_once"head.php";?>
    
 <!-- slider  -->
 
@@ -270,5 +270,6 @@ Cordialement, <br> BAYEMI Francoise <br> Fruitscam
 
     setInterval(nextSlide, 4000); // Change slide every 3 seconds
 </script>
+   <?php include_once"footer.php";?>
 </body>
 </html>

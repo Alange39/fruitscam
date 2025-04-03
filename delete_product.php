@@ -36,6 +36,7 @@ if (isset($_POST['sub'])) {
 </head>
 
 <body>
+          <?php include_once"head.php";?>
     <?php
     foreach ($stmt->fetchAll() as $k => $v) {
         # code...

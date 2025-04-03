@@ -9,6 +9,7 @@
     <title>adamin page</title>
 </head>
 <body class="bg-[url('assets/images/ananas-large.jpg')]">
+          <?php include_once"head.php";?>
     <h1>BIENVENUE</h1>
 
 

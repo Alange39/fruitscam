@@ -62,6 +62,7 @@ try {
             </tbody>
         </table>
     </div>
+     <?php include_once"head.php";?>
     <script>
         lucide.createIcons();
     </script>

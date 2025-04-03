@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+      <?php include_once"head.php";?>
 
     <header class="relative w-full h-[570px] overflow-hidden">
         <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
@@ -187,6 +188,7 @@
 
         setInterval(showNextSlide, 5000); 
     </script>
+       <?php include_once"footer.php";?>
 </body>
 </html>
 

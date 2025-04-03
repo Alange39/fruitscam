@@ -7,16 +7,16 @@
     <style>
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: #f8f8f8;
 }
 
 header {
     text-align: center;
-    padding: 30px;
+    /* padding: 30px; */
     background-color: #fff;
-    font-size: 32px;
+   
     font-weight: bold;
     color: #4c8c4a;
 }
@@ -86,7 +86,9 @@ footer {
 }
     </style>
 </head>
-<body>
+<body> 
+      <?php include_once"head.php";?>
+
     <header>
         <h1>Partenaires</h1>
     </header>

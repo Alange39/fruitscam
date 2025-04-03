@@ -50,6 +50,7 @@ if (isset($_POST['sub'])) {
 </head>
 
 <body>
+          <?php include_once"head.php";?>
     <form action="" method="post" enctype="multipart/form-data">
 
         <input type="file" name="image_file" accept="iamge/*" id="" placeholder="phots du produit"><br>
