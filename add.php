@@ -1,7 +1,7 @@
 <?php
 require_once 'BD.php';
 
-$message = ""; // Variable pour stocker les messages
+$message = ""; 
 
 if(isset($_POST['submit'])){
     $nom = trim($_POST['nom']);
@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $password = $_POST['passwords'];
     $cpassword = $_POST['cpassword'];
 
-    // Vérifier si le numéro existe déjà
+   
     $select = $conn->prepare("SELECT passwords FROM personel WHERE numeros = ?");
     $select->bind_param("s", $numeros);
     $select->execute();
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
     <div class="bg-white p-6 rounded-lg shadow-lg w-96">
         <h2 class="text-2xl font-bold mb-2 text-center">Ajout de Personnel</h2>
         
-        <!-- Affichage du message ici -->
+        
         <?php if (!empty($message)) echo $message; ?>
         
         <form action="" method="post" class="space-y-4 mt-2">
