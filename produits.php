@@ -1,5 +1,14 @@
 <?php
 include_once "connect_to_bd.php";
+
+ //recuperer les produits stocker dans la bd
+try {
+    $stmt = $conn->prepare("SELECT * FROM produits") ;
+    $stmt->execute();
+    echo "cool" ;
+} catch (PDOException $e) {
+    echo "error" . $e->getMessage() ;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +21,6 @@ include_once "connect_to_bd.php";
 </head>
 
 <body class="font-Roboto">
-    <?php
-    include_once "head.php"
-    ?>
 
     <section class="bg-[url(./img/Image.png)] h-screen ">
         <div class="h-screen bg-black/30 flex flex-col justify-center text-[#FFF] items-center">
@@ -36,6 +42,12 @@ include_once "connect_to_bd.php";
 
         <div class="flex justify-around">
 
+               <!-- afficher les produits recuperer -->
+                  <?php
+                        foreach ($variable as $key => $value) {
+                            # code...
+                        }
+                  ?>
             <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px] p-2">
                 <div>
                     <img src="./img/Image1.png" alt="" class="w-[300px] h-[300px]">
@@ -45,7 +57,7 @@ include_once "connect_to_bd.php";
                 <button class="w-[95%] border-1 border-solid border-zinc-200 text-zinc-500 mx-2 rounded-[5px]">Voir plus</button>
             </div>
 
-            <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px]  p-2">
+            <!-- <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px]  p-2">
                 <div>
                     <img src="./img/Image 20 (2).png" alt="" class="w-[300px] h-[300px]">
                 </div>
@@ -61,7 +73,7 @@ include_once "connect_to_bd.php";
                 <h4 class="text-xl font-700">jus de mangue</h4>
                 <h5 class="text-zinc-500 font-200">prix: 1500f</h5>
                 <button class="w-[95%] border-1 border-solid border-zinc-200 text-zinc-500 mx-2 rounded-[5px]">Voir plus</button>
-            </div>
+            </div> -->
 
         </div>
 

@@ -66,7 +66,7 @@ if(isset($_POST['submit'])){
                 <input type="password" id="passwords" name="passwords" required class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-green-500">
             </div>
             <div>
-                <label for="cpassword" class="block font-medium">Confirme Mot de passe :</label>
+                <label for="password" class="block font-medium">Confirme Mot de passe :</label>
                 <input type="password" id="cpassword" name="cpassword" required class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-green-500">
             </div>
             <button type="submit" name="submit" class="w-full bg-green-600 text-white p-2 rounded-lg hover:bg-green-700">Ajouter</button>

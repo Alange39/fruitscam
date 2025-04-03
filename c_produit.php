@@ -1,5 +1,5 @@
 <?php
-include_once "connect_to_bd.php";
+require ("connect_to_bd.php");
 ?>
 
 <!DOCTYPE html>
@@ -13,13 +13,11 @@ include_once "connect_to_bd.php";
 </head>
 
 <body class="font-[Roboto]">
-
-    <?php
-    include_once "head.php";
-    ?>
-
+   <?php
+   include_once "head.php";
+   ?>
     <section class="mt-[50px] ">
-        <div class="flex justify-center gap-[12rem] items-center">
+        <div class="flex justify-center gap-[12rem] items-center max-lg:flex-col">
             <div>
 
 
@@ -127,5 +125,10 @@ include_once "connect_to_bd.php";
         </div>
 
     </section>
+
+    <?php
+       include_once "footer.php" ;
+       include_once "script.php";
+    ?>
 </body>
 </html>

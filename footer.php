@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     
     <footer class="bg-[#CCCCCE] py-6 px-3 text-gray-800 text-xs">
         <!-- Section supérieure avec logo et newsletter -->
@@ -90,5 +82,4 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+

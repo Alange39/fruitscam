@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body>
+
+
     <header>
         <nav class="bg-[#2D8740] px-4 py-2">
           <div class=" flex justify-between items-start p-[5px]">
@@ -75,25 +68,4 @@
 
       
       
-      <script>
-        // JavaScript pour le menu mobile
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-          const menu = document.getElementById('navbar-menu');
-          if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-          } else {
-            menu.classList.add('hidden');
-          }
-        });
-        
-        // Pour le dropdown sur mobile
-        document.getElementById('about-dropdown-button').addEventListener('click', function(e) {
-          if (window.innerWidth < 768) {
-            e.preventDefault();
-            const dropdown = this.nextElementSibling;
-            dropdown.classList.toggle('hidden');
-          }
-        });
-      </script>
-</body>
-</html>
+      
