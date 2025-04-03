@@ -20,8 +20,7 @@
     <div class="slides">
         <div class="slide">
             <img src="assets/images/bou.png" alt="">
-            <div class="text">texte 1</div>
-             <div class="text">texte 2</div>
+           
              <div class=" ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px] bg-black rounded-full "></button>
               <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
@@ -32,7 +31,7 @@
         </div>
         <div class="slide">
             <img src="assets/images/coco.jpg" alt="">
-            <div class="text">texte 2</div>
+           
              <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
               <button class="w-[15px] h-[15px] bg-black rounded-full "></button>
@@ -42,7 +41,7 @@
         </div>
         <div class="slide">
             <img src="assets/images/mangoes.jpg" alt="">
-            <div class="text">texte 3</div>
+            
              <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
               <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
@@ -52,7 +51,7 @@
         </div>
          <div class="slide">
             <img src="assets/images/fruits.jpg" alt="">
-            <div class="text">texte 4</div>
+           
                <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
               <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
@@ -66,12 +65,12 @@
 
   <!-- premiere div apres le slider -->
 
-  <div>
+  <div class="bg-gray-100 pt-[30px]">
 
   <h1 class=" max-md:inline-block  text-center max-md:mr-[38px] text-3xl max-md:pl-[30px]  max-md:text-lg pt-[30px]">Entre Savoir-Faire Et Traditions</h1>
 
   <div class="w-[1000px] max-md:w-[300px] inline-block  max-md:inline-block  items-center max-md:ml-[25px] max-md:text-[13px] justify-center pt-[30px]   ml-[200px]">
-    <p class=" max-md:inline-block ">
+    <p class=" max-md:inline-block pb-[60px]">
       Depuis son lancement en 1996 par sa promotrice Madame Bayemi Francoise, l'entreprise Fruitscam a connu une evolution remarquable grace a l'inovation  et
       au devouement de son equipe majoritairement constituee de femmes. Celles-ci mettent en avant leurs competences pour valoriser les valeurs authentiques 
       des fruits de leurs region. Fruitscam propose ainsi des produits de qualite qui allient tradition et modernite, offrant une experience gustative unique
@@ -242,8 +241,8 @@ Ces employés, soucieux de l'environnement, s'investissent dans des actions éco
      <!-- derniere partie avant le footer, concernant le speech de la DG -->
 
      <section class="bg-green-600">
-      <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full  items-center mt-[-70px] ml-[45%]  max-md:ml-[40%]">
-      <div class="pt-[120px] pb-[40px] w-[1270px] pl-[210px] text-center text-white max-md:text-[10px] max-md:pl-[20px]  max-md:w-[350px]">
+      <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full  items-center mt-[-75px] absolute ml-[45%]  max-md:ml-[40%]">
+      <div class="pt-[120px] pb-[80px] w-[1270px] pl-[210px] text-center text-white max-md:text-[10px] max-md:pl-[20px]  max-md:w-[350px]">
         <p>
           Bienvenue chez Fruitscam ! <br> 
 
