@@ -50,7 +50,7 @@
             </div>
         </div>
          <div class="slide">
-            <img src="assets/images/boutiq.jpg" alt="">
+            <img src="assets/images/WhatsApp Image 2025-04-04 à 10.57.24_abde390d.jpg" alt="">
            
                <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px]  bg-gray-300 rounded-full "></button>
