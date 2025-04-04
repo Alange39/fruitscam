@@ -8,12 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+
+
       <?php include_once"head.php";?>
+
 
     <header class="relative w-full h-[570px] overflow-hidden">
         <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
-            <!-- Slide 1 -->
-            <div class="min-w-full h-full relative">
+            <!-- premiere image  -->
+            <div class="min-w-full h-full relative"> 
                 <img src="./image/Image 1.png " alt="Image 1" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
                     <div class="">
@@ -147,7 +150,7 @@
                      <li>Soutient la sante cardiaque</li>
                    </ul>
              </div>
-             <img src="./image/noni.png" alt="" class="w-[400px] h-[215px] ">
+             <img src="./image/noni.png" alt="" class="w-[500px] h-[255px] ">
 
 
      </section>
@@ -169,7 +172,27 @@
                 <p>100% naturels</p>
             </div>
           </section>
-		  
+          
+          <?php
+           require_once 'footer.php';
+           ?>
+
+        <?php
+          include_once "script.php"
+        ?>
+
+    
+            
+        
+
+     
+  
+
+
+
+
+
+
     <script>
         let index = 0;
         const slides = document.querySelectorAll("#carousel > div");
@@ -188,7 +211,7 @@
 
         setInterval(showNextSlide, 5000); 
     </script>
-       <?php include_once"footer.php";?>
+       
 </body>
 </html>
 
