@@ -8,16 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-<<<<<<< HEAD
-      <?php require_once 'head.html';?>
-=======
+
+
       <?php include_once"head.php";?>
->>>>>>> 3ec8c6fce725ca8459d277822f36ddf62fffce45
+
 
     <header class="relative w-full h-[570px] overflow-hidden">
         <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
-            <!-- Slide 1 -->
-            <div class="min-w-full h-full relative">
+            <!-- premiere image  -->
+            <div class="min-w-full h-full relative"> 
                 <img src="./image/Image 1.png " alt="Image 1" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
                     <div class="">
@@ -173,8 +172,11 @@
                 <p>100% naturels</p>
             </div>
           </section>
+          
+          <?php require_once 'script.php';?>
 
-          <?php require_once 'footer.html';?>
+
+          <?php require_once 'footer.php';?>
 
     
             
