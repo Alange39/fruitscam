@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+      <?php require_once 'head.html';?>
 
     <header class="relative w-full h-[570px] overflow-hidden">
         <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
@@ -167,6 +168,7 @@
                 <p>100% naturels</p>
             </div>
           </section>
+          <?php require_once 'footer.html';?>
 
     
             
