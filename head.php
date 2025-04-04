@@ -1,4 +1,3 @@
-
 <header>
   <nav class="bg-[#2D8740] px-4 py-2">
     <div class=" flex justify-between items-center p-[5px]">
@@ -6,7 +5,6 @@
       <a href="#" class="flex items-start">
         <img src="" alt="Fruitscam" class="">
       </a>
-
 
       <div>
         <!-- Mobile menu button -->
@@ -17,8 +15,8 @@
         </button>
 
         <!-- Menu -->
-        <div class="hidden absolute pb-[20px] rounded-[15px] bg-[#2D8740] right-[10%] top-[0px] md:relative h-[30px] w-[25%] md:flex md:items-center md:w-auto" id="navbar-menu">
-          <ul class="flex flex-col mt-4 md:flex-row items-center md:mt-0 md:space-x-6 bg-[#2D8740]">
+        <div class="hidden absolute pb-[20px] rounded-[15px] bg-[#2D8740] right-[10%] top-[] md:relative h-[30px] w-[25%] md:flex md:items-center md:w-auto" id="navbar-menu">
+          <ul class="flex flex-col mt-4 md:flex-row items-center md:mt-0 md:space-x-6">
             <li>
               <a href="index.php" class="no-underline hover:underline block py-2 text-white hover:scale-110 transition-transform relative group">
                 Home
@@ -61,6 +59,5 @@
       </div>
     </div>
   </nav>
-
 
 </header>
