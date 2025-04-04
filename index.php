@@ -150,7 +150,7 @@
                      <li>Soutient la sante cardiaque</li>
                    </ul>
              </div>
-             <img src="./image/noni.png" alt="" class="w-[400px] h-[215px] ">
+             <img src="./image/noni.png" alt="" class="w-[500px] h-[255px] ">
 
 
      </section>
@@ -173,10 +173,13 @@
             </div>
           </section>
           
-          <?php require_once 'script.php';?>
+          <?php
+           include_once 'footer.php';
+           ?>
 
-
-          <?php require_once 'footer.php';?>
+        <?php
+          include_once "script.php"
+        ?>
 
     
             
@@ -208,7 +211,7 @@
 
         setInterval(showNextSlide, 5000); 
     </script>
-       <?php include_once"footer.php";?>
+       
 </body>
 </html>
 
