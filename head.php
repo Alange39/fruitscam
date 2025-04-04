@@ -2,7 +2,7 @@
 
     <header>
         <nav class="bg-[#2D8740] px-4 py-2">
-          <div class=" flex justify-between items-start p-[5px]">
+          <div class=" flex justify-between items-center p-[5px]">
             <!-- Logo -->
             <a href="#" class="flex items-start">
               <img src="" alt="Fruitscam" class="h-12">
