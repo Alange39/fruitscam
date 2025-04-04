@@ -47,18 +47,22 @@ try {
 
                <!-- afficher les produits recuperer -->
                   <?php
-                        foreach ($variable as $key => $value) {
-                            # code...
-                        }
+                        foreach ($stmt->fetchAll() as $k => $v) {    
                   ?>
             <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px] p-2">
                 <div>
-                    <img src="./img/Image1.png" alt="" class="w-[300px] h-[300px]">
+                    <img src="upload/<?=$v["photos"]?>" alt="" class="w-[300px] h-[300px]">
                 </div>
-                <h4 class="text-xl font-700">jus d'orange</h4>
-                <h5 class="text-zinc-500 font-200">prix: 1500f</h5>
-                <button class="w-[95%] border-1 border-solid border-zinc-200 text-zinc-500 mx-2 rounded-[5px]">Voir plus</button>
+                <h4 class="text-xl font-700"><?=$v["noms"]?></h4>
+                <h5 class="text-zinc-500 font-200">prix: <?=$v["prix"]?>f</h5>
+                <a href="c_produit.php?id=<?=$v["id"]?>">
+                    <button class="w-[95%] border-1 border-solid border-zinc-200 text-zinc-500 mx-2 rounded-[5px]">Voir plus</button>
+                </a>
+                    
             </div>
+                 <?php
+                        }
+                 ?>
 
             <!-- <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px]  p-2">
                 <div>
