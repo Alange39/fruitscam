@@ -18,9 +18,9 @@ try {
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="p-10">
-    <div class="overflow-x-auto">
-        <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-lg">
+<body class="p-10 ">
+    <div class="overflow-x-auto w-[1300px] ml-[110px]">
+        <table class="min-w-full bg-white border w-[1000px] border-gray-300 shadow-md rounded-lg">
             <thead>
                 <tr class="bg-green-500 text-white">
                     <th class="py-2 px-4 border">Nom</th>
