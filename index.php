@@ -170,6 +170,10 @@
             </div>
           </section>
 		  
+		  <?php include_once"footer.php";?>
+		  <?php
+             include_once"script.php"
+		  ?>
     <script>
         let index = 0;
         const slides = document.querySelectorAll("#carousel > div");
@@ -188,7 +192,6 @@
 
         setInterval(showNextSlide, 5000); 
     </script>
-       <?php include_once"footer.php";?>
 </body>
 </html>
 

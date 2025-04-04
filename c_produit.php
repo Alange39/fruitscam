@@ -1,5 +1,13 @@
 <?php
 require ("connect_to_bd.php");
+
+try {
+    $id=$_GET['id'];
+    $stmt= $conn->prepare("SELECT * FROM produits WHERE id=?");
+    $stmt->execute(array("$id")) ;
+} catch (PDOException $e) {
+    echo "error" . $e->getMessage() ;
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,18 +25,27 @@ require ("connect_to_bd.php");
    <?php
    include_once "head.php";
    ?>
+   <?php
+     foreach ($stmt->fetchAll() as $k=> $v) {
+        
+     }
+   ?>
     <section class="mt-[50px] ">
         <div class="flex justify-center gap-[12rem] items-center max-lg:flex-col">
             <div>
 
 
-                <img src="./img/image1.png" alt="jus d'orange" class="w-[50hv] h-screen">
+                <img src="upload/<?=$v['photos']?>" class="w-[50hv] h-screen">
 
 
             </div>
-
+                            
             <div>
-                <h1 class="text-[#F3C63F] text-5xl my-[50px]">Jus d'orange</h1>
+                <h1 class="text-[#F3C63F] text-5xl my-[50px]"><?php
+                $nom= strtoupper($v["noms"]);
+                echo$nom;
+                  ?>
+                  </h1>
 
                 <h2 class="text-2xl font-[800] mb-[15px]">description :</h2>
 
