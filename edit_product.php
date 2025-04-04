@@ -67,6 +67,7 @@ try {
 </head>
 
 <body>
+          <?php include_once"head.php";?>
     <?php
     foreach ($select->fetchAll() as $k => $v) {
         # code...

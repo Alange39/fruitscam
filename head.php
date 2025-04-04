@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/js/Script.js">
+       <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+  
 
 
     <header>
@@ -5,7 +20,7 @@
           <div class=" flex justify-between items-center p-[5px]">
             <!-- Logo -->
             <a href="#" class="flex items-start">
-              <img src="" alt="Fruitscam" class="h-12">
+              <img src="" alt="Fruitscam" class="">
             </a>
             
              <div>
@@ -17,10 +32,10 @@
             </button>
             
             <!-- Menu -->
-            <div class="hidden absolute pb-[20px] rounded-[15px] bg-[#2D8740] right-[10%] md:relative w-[25%] md:flex md:items-center md:w-auto" id="navbar-menu">
+            <div class="hidden absolute pb-[20px] rounded-[15px] bg-[#2D8740] right-[10%] md:relative h-[30px] w-[25%] md:flex md:items-center md:w-auto" id="navbar-menu">
               <ul class="flex flex-col mt-4 md:flex-row items-center md:mt-0 md:space-x-6">
                 <li>
-                  <a href="/" class="block py-2 text-white hover:scale-110 transition-transform relative group">
+                  <a href="index.php" class="block py-2 text-white hover:scale-110 transition-transform relative group">
                     Home
                     <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                   </a>
@@ -31,8 +46,8 @@
                     <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                   </a>
                   <div class="hidden absolute z-10 bg-white rounded-md shadow-lg py-1 mt-1 w-40 group-hover:block">
-                    <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Entreprise</a>
-                    <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Partenaires</a>
+                    <a href="entreprise.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Entreprise</a>
+                    <a href="partenaires.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Partenaires</a>
                   </div>
                 </li>
                 
@@ -42,7 +57,7 @@
                           <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                         </a>
                         <div class="hidden absolute z-10 bg-white rounded-md shadow-lg py-1 mt-1 w-40 group-hover:block">
-                          <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jus</a>
+                          <a href="produits.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jus</a>
                           <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sirop</a>
                           <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Vin</a>
                         </div>
@@ -63,7 +78,7 @@
         </nav>
 
       </header>
-
+</body>
 
 
       

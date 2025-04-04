@@ -13,6 +13,7 @@ require ("connect_to_bd.php");
 </head>
 
 <body class="font-[Roboto]">
+          <?php include_once"head.php";?>
    <?php
    include_once "head.php";
    ?>

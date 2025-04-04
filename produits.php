@@ -22,6 +22,9 @@ try {
 
 <body class="font-Roboto">
 
+           <?php include_once"head.php";?>
+
+
     <section class="bg-[url(./img/Image.png)] h-screen ">
         <div class="h-screen bg-black/30 flex flex-col justify-center text-[#FFF] items-center">
             <div class="text-center bg-black/30">
@@ -82,6 +85,7 @@ try {
         </div>
 
     </section>
+     <?php include_once"footer.php";?>
 </body>
 
 </html>
