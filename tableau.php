@@ -1,3 +1,14 @@
+<?php
+include_once "connect_to_bd.php";
+
+try {
+    $stmt = $conn->prepare("SELECT * FROM produits");
+    $stmt->execute();
+} catch (PDOException $e) {
+    echo "pas cool" . $e->getMessage();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -23,28 +34,35 @@
                 </tr>
             </thead>
             <tbody>
+                <?php
+                  foreach ($stmt->fetchAll() as $k => $v) {
+                ?>
                 <tr class="border">
-                    <td class="py-2 px-4 border">Produit 1</td>
-                    <td class="py-2 px-4 border"><img src="image.jpg" alt="Produit" class="w-16 h-16 object-cover"></td>
-                    <td class="py-2 px-4 border">Ingrédient 1, 2</td>
-                    <td class="py-2 px-4 border">10€</td>
-                    <td class="py-2 px-4 border">Description du produit</td>
-                    <td class="py-2 px-4 border">5</td>
-                    <td class="py-2 px-4 border">Catégorie 1</td>
-                    <td class="py-2 px-4  flex gap-2 jutify-center items-center">
+                    <td class="py-2 px-4 border"><?=$v["noms"]?></td>
+                    <td class="py-2 px-4 border"><img src="./upload/<?=$v['photos']?>" alt="Produit" class="w-16 h-16 object-cover"></td>
+                    <td class="py-2 px-4 border"><?=$v['ingredient']?></td>
+                    <td class="py-2 px-4 border"><?=$v['prix']?></td>
+                    <td class="py-2 px-4 border"><?=$v["descriptions"]?></td>
+                    <td class="py-2 px-4 border"><?=$v["quantites"]?></td>
+                    <td class="py-2 px-4 border"><?=$v["categoties"]?></td>
+                    <td class="py-1 px-4   gap-2 jutify-center items-center">
 
-                        <a href="" class="text-blue-500 hover:text-blue-700">
-                            <i data-lucide="edit" class="w-5 h-5"></i>
-                        </a> 
-                        <a href="" class="text-red-500 hover:text-red-700">
-                            <i data-lucide="trash-2" class="w-5 h-5"></i>
+                        <a href="edit_product.php?id=<?=$v["id"]?>" class="text-blue-500 hover:text-blue-700 flex">
+                            <i data-lucide="edit" class="w-5 h-5"></i>modifier
+                        </a> <br>
+                        <a href="delete_product.php?id=<?=$v['id']?>" class="text-red-500 hover:text-red-700 flex">
+                            <i data-lucide="trash-2" class="w-5 h-5"></i>supprimer
                         </a>
                     </td>
                     
                 </tr>
+                <?php
+                  }
+                ?>
             </tbody>
         </table>
     </div>
+     <?php include_once"head.php";?>
     <script>
         lucide.createIcons();
     </script>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+<<<<<<< HEAD
       <?php require_once 'head.html';?>
+=======
+      <?php include_once"head.php";?>
+>>>>>>> 3ec8c6fce725ca8459d277822f36ddf62fffce45
 
     <header class="relative w-full h-[570px] overflow-hidden">
         <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
@@ -168,6 +173,7 @@
                 <p>100% naturels</p>
             </div>
           </section>
+
           <?php require_once 'footer.html';?>
 
     
@@ -176,6 +182,7 @@
 
      
   
+
 
 
 
@@ -199,6 +206,7 @@
 
         setInterval(showNextSlide, 5000); 
     </script>
-
+       <?php include_once"footer.php";?>
 </body>
 </html>
+
