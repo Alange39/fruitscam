@@ -1,13 +1,13 @@
 <?php
 include_once "connect_to_bd.php";
 
- //recuperer les produits stocker dans la bd
+//recuperer les produits stocker dans la bd
 try {
-    $stmt = $conn->prepare("SELECT * FROM produits") ;
+    $stmt = $conn->prepare("SELECT * FROM produits");
     $stmt->execute();
-    echo "cool" ;
+    echo "cool";
 } catch (PDOException $e) {
-    echo "error" . $e->getMessage() ;
+    echo "error" . $e->getMessage();
 }
 ?>
 <!DOCTYPE html>
@@ -16,13 +16,15 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 
 <body class="font-Roboto">
 
-           <?php include_once"head.php";?>
+    <?php include_once "her.php"; ?>
 
 
     <section class="bg-[url(./img/Image.png)] h-screen ">
@@ -45,24 +47,24 @@ try {
 
         <div class="flex justify-around">
 
-               <!-- afficher les produits recuperer -->
-                  <?php
-                        foreach ($stmt->fetchAll() as $k => $v) {    
-                  ?>
-            <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px] p-2">
-                <div>
-                    <img src="upload/<?=$v["photos"]?>" alt="" class="w-[300px] h-[300px]">
+            <!-- afficher les produits recuperer -->
+            <?php
+            foreach ($stmt->fetchAll() as $k => $v) {
+            ?>
+                <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px] p-2">
+                    <div>
+                        <img src="upload/<?= $v["photos"] ?>" alt="" class="w-[300px] h-[300px]">
+                    </div>
+                    <h4 class="text-xl font-700"><?= $v["noms"] ?></h4>
+                    <h5 class="text-zinc-500 font-200">prix: <?= $v["prix"] ?>f</h5>
+                    <a href="c_produit.php?id=<?= $v["id"] ?>">
+                        <button class="w-[95%] border-1 border-solid border-zinc-200 text-zinc-500 mx-2 rounded-[5px]">Voir plus</button>
+                    </a>
+
                 </div>
-                <h4 class="text-xl font-700"><?=$v["noms"]?></h4>
-                <h5 class="text-zinc-500 font-200">prix: <?=$v["prix"]?>f</h5>
-                <a href="c_produit.php?id=<?=$v["id"]?>">
-                    <button class="w-[95%] border-1 border-solid border-zinc-200 text-zinc-500 mx-2 rounded-[5px]">Voir plus</button>
-                </a>
-                    
-            </div>
-                 <?php
-                        }
-                 ?>
+            <?php
+            }
+            ?>
 
             <!-- <div class="border-[1.5px] border-solid border-zinc-100 inline-block rounded-[10px]  p-2">
                 <div>
@@ -85,7 +87,7 @@ try {
         </div>
 
     </section>
-     <?php include_once"footer.php";?>
+    <?php include_once "footer.php"; ?>
 </body>
 
 </html>
