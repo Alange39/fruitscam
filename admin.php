@@ -16,11 +16,11 @@
 
 </head>
 <body class="bg-[url('assets/images/ananas-large.jpg')]">
-<?php include 'head.html';?>
+<?php include 'head.php';?>
 
           <div class="ml-[970px] text-black pt-[30px]">
             
-          <a href="" class=" text-black underline">Ajouter un produit</a>
+          <a href="creer_produit.php" class=" text-black underline">Ajouter un produit</a>
           <a href="" class="text-black underline pl-[30px]">Ajouter un administrateur</a>
 
           </div>

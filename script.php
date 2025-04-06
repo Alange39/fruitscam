@@ -10,7 +10,7 @@
     });
 
     // Pour le dropdown sur mobile
-    document.getElementById('about-dropdown-button').addEventListener('click', function(e) {
+    document.getElementByClass('about-dropdown-button').addEventListener('click', function(e) {
         if (window.innerWidth < 768) {
             e.preventDefault();
             const dropdown = this.nextElementSibling;

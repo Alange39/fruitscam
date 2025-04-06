@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-   <link rel="stylesheet" href="assets/js/Script.js">
-       <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Document</title>
 </head>
 <body >
-      <?php include_once"head.php";?>
-   
+  <?php include 'essai.php';?>
+      
 <!-- slider  -->
 
 <div class="slider">
     <div class="slides">
-        <div class="slide">
+        <div class="slide ">
             <img src="assets/images/jus-fruits.jpg" alt="">
            
              <div class=" ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
@@ -30,7 +27,7 @@
        
         </div>
         <div class="slide">
-            <img src="assets/images/gingembre.jpg" alt="">
+            <img src="assets/images/gingembre.jpg" alt=""  >
            
              <div class="ml-[48%] flex gap-[10px]  mt-[-50px]  absolute">
               <button class="w-[15px] h-[15px] bg-gray-300 rounded-full "></button>
@@ -212,7 +209,8 @@ savoureux et fiables.</p>
         <img src="assets/images/Group.png" alt="" class=" h-[20px] w-[20px] ml-[60px]">
 
         <p class="bold pt-[10px] ml-[52px]">respect</p>
-        <p class=" inline-block  text-[10px] pt-[16px] w-[215px]">Le respectLe respect est une valeur fondamentale au sein de l'entreprise Fruitscam. Il constitue un outil essentiel pour garantir un environnement de travail harmonieux et productif. En cultivant le respect entre collègues, nous favorisons une communication ouverte et une collaboration efficace. Chaque membre de l'équipe se sent valorisé, ce qui renforce la motivation et l'engagement.</p>
+        <p class=" inline-block  text-[10px] pt-[16px] w-[215px]">Le respectLe respect est une valeur fondamentale au sein de l'entreprise 
+          Fruitscam. Il constitue un outil essentiel pour garantir un environnement de travail harmonieux et productif. En cultivant le respect entre collègues, nous favorisons une communication ouverte et une collaboration efficace. Chaque membre de l'équipe se sent valorisé, ce qui renforce la motivation et l'engagement.</p>
       </div>
      </section>
 
@@ -271,5 +269,8 @@ Cordialement, <br> BAYEMI Francoise <br> Fruitscam
     setInterval(nextSlide, 4000); // Change slide every 3 seconds
 </script>
    <?php include_once"footer.php";?>
+
+     <?php include 'script.php';?>
+      
 </body>
 </html>

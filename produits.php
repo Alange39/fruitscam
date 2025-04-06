@@ -86,6 +86,8 @@ try {
 
     </section>
      <?php include_once"footer.php";?>
+     <!-- ange ajoute le script en bas du body pour voir une modif -->
+     
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="h-[300px]">
     <header class="bg-[#2D8740] flex justify-between items-center p-[5px]">
       <!-- Logo -->
       <a href="#" class="">
@@ -31,7 +31,7 @@
                   </a>
                 </li>
                 <li class="relative group">
-                  <a href="#" class="block py-2 text-white hover:scale-110 transition-transform relative group flex items-center" id="about-dropdown-button">
+                  <a href="#" class="block py-2 text-white hover:scale-110 transition-transform relative group flex items-center" class="about-dropdown-button">
                     About
                     <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                   </a>
@@ -42,13 +42,13 @@
                 </li>
                 
                     <li class="relative group">
-                        <a href="#" class="block py-2 text-white hover:scale-110 transition-transform relative group flex items-center" id="about-dropdown-button">
+                        <a href="#" class="block py-2 text-white hover:scale-110 transition-transform relative group flex items-center" class="about-dropdown-button">
                           Produits
                           <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                         </a>
                         <div class="hidden absolute z-10 bg-white rounded-md shadow-lg py-1 mt-1 w-40 group-hover:block">
-                          <a href="c_produit.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jus</a>
-                          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sirop</a>
+                          <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jus</a>
+                          <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sirop</a>
                           <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Vin</a>
                         </div>
                       </li>

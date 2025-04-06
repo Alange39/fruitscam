@@ -177,10 +177,7 @@
            require_once 'footer.php';
            ?>
 
-        <?php
-          include_once "script.php"
-        ?>
-
+       
     
             
         
@@ -212,6 +209,7 @@
         setInterval(showNextSlide, 5000); 
     </script>
        
+        <?php include 'script.php';?>
 </body>
 </html>
 
