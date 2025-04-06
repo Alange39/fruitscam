@@ -5,7 +5,7 @@ include_once "connect_to_bd.php";
 try {
     $stmt = $conn->prepare("SELECT * FROM produits");
     $stmt->execute();
-    echo "cool";
+    
 } catch (PDOException $e) {
     echo "error" . $e->getMessage();
 }
@@ -87,7 +87,9 @@ try {
         </div>
 
     </section>
-    <?php include_once "footer.php"; ?>
+    <?php
+     include_once "footer.php"; 
+    ?>
 </body>
 
 </html>

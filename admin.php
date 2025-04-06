@@ -16,7 +16,7 @@
 
 </head>
 <body class="bg-[url('assets/images/ananas-large.jpg')]">
-          <?php include_once"head.php";?>
+          <?php include_once"her.php";?>
 
           <div class="ml-[970px] text-black pt-[30px]">
             
@@ -28,7 +28,11 @@
     <h1 class="text-3xl text-blue-800 text-center my-[50px]">BIENVENUE CHER ADMIN (E) <br> DANS LA PAGE D'ADMINISTRATION</h1>
 
 
-    <?php include_once"tableau.php";?>
+    <?php include_once"tableau.php";
+    include_once "footer.php";
+    include_once "script.php";
+    ?>
+
 <script src="assets/js/ad_menu.js"></script>
 </body>
 

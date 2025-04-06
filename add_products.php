@@ -1,17 +1,18 @@
 <?php
-include_once "connect_to_bd.php";
-if (isset($_FILES['image_file'])) {
-    $name = $_FILES['image_file']['name'];
-    $tmpname = $_FILES['image_file']['tmp_name'];
-}
 if (isset($_POST['sub'])) {
+    
+    include_once "connect_to_bd.php";
+    if (isset($_FILES['image_file'])) {
+        $name = $_FILES['image_file']['name'];
+        $tmpname = $_FILES['image_file']['tmp_name'];
+    }
 
     //recuperation des informations a stocker dans la bd
 
     $nom = $_POST['nom'];
     $prix = $_POST['prix'];
     $descript = $_POST['descriptions'];
-    $ingeredient = $_POST['ingredient'];
+    $ingeredient = $_POST['ingredients'];
     $quantite = $_POST['quant'];
     $categ = $_POST['categ'];
     $tabextention = explode('.', $name);
@@ -40,7 +41,7 @@ if (isset($_POST['sub'])) {
 }
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -53,14 +54,14 @@ if (isset($_POST['sub'])) {
 </head>
 
 <body>
-    <?php include_once "head.php"; ?>
+
     <form action="" method="post" enctype="multipart/form-data">
 
         <!-- <input type="file" name="image_file" accept="iamge/*" id="" placeholder="phots du produit"><br> -->
 
 
         
-        <input type="text" name="nom" id="" placeholder="nom du produit"><br>
+        <!-- <input type="text" name="nom" id="" placeholder="nom du produit"><br>
         <input type="number" name="prix" id="" placeholder="prix"><br>
         <input type="text" name="descriptions" id="" placeholder="description"><br>
         <input type="text" name="ingredient" id="" placeholder="ingredients"><br>
@@ -82,6 +83,5 @@ if (isset($_POST['sub'])) {
         </div>
 
     </form>
-</body>
+</body> -->
 
-</html>
