@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +71,6 @@
         
       <?php include_once"script.php";?>
       </body>
-=======
 
 <header>
   <nav class="bg-[#2D8740] px-4 py-2">
@@ -136,7 +134,6 @@
       </div>
     </div>
   </nav>
->>>>>>> 0eb63a3ace6d900aeb33d45dfe16cca39b9c77f0
 
 
 </header>
