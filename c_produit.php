@@ -26,7 +26,7 @@ try {
 
 
     <?php
-    include_once "her.php";
+    include_once "head.php";
 
     foreach ($stmt->fetchAll() as $k => $v) {
     }
@@ -154,7 +154,7 @@ try {
 
     <?php
     include_once "footer.php";
-    
+
     include_once "script.php";
     ?>
 </body>

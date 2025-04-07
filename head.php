@@ -1,64 +1,94 @@
-<header>
-  <!-- Logo -->
-  <a href="#" class="flex items-start">
-    <img src="" alt="Fruitscam" class="">
-  </a>
 
-  <nav class="bg-[#2D8740] px-4 py-2">
-    <div class=" flex justify-between items-center p-[5px]">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Fruitscam</title>
+</head>
+<body class="bg-white">
+  <header class="bg-[#2D8740] text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <!-- Logo -->
+      <a href="#">
+        <img src="logo.png" alt="Fruitscam" class="h-8" />
+      </a>
 
-      <div>
-        <!-- Mobile menu button -->
-        <button type="button" class="inline-flex items-center p-2 ml-3 text-white md:hidden" id="mobile-menu-button">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-        <!-- Menu -->
-        <div class="hidden absolute pb-[20px] rounded-[15px] bg-[#2D8740] right-[10%] top-[] md:relative h-[30px] w-[25%] md:flex md:items-center md:w-auto" id="navbar-menu">
-          <ul class="flex flex-col mt-4 md:flex-row items-center md:mt-0 md:space-x-6">
-            <li>
-              <a href="index.php" class="no-underline hover:underline block py-2 text-white hover:scale-110 transition-transform relative group">
-                Home
-                <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
-              </a>
-            </li>
-            <li class="relative group">
-              <a href="#" class="no-underline hover:underline block py-2 text-white hover:scale-110 transition-transform relative group flex items-center" id="about-dropdown-button">
-                About
-                <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
-              </a>
-              <div class="hidden absolute z-10 bg-white rounded-md shadow-lg py-1 mt-1 w-40 group-hover:block">
-                <a href="entreprise.php" class="no-underline hover:underline block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Entreprise</a>
-                <a href="partenaires.php" class=" no-underline hover:underline block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Partenaires</a>
-              </div>
-            </li>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 items-center font-medium">
+        <a href="index.php" class="group relative text-white transition">
+          Home
+          <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+        </a>
 
-            <li class="relative group">
-              <a href="#" class="block no-underline hover:underline py-2 text-white hover:scale-110 transition-transform relative group flex items-center" id="about-dropdown-button">
-                Produits
-                <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
-              </a>
-              <div class="hidden absolute z-10 bg-white rounded-md shadow-lg py-1 mt-1 w-40 group-hover:block">
-                <a href="produits.php" class="block no-underline hover:underline px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jus</a>
-                <a href="/" class="block no-underline hover:underline px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sirop</a>
-                <a href="/" class="block no-underline hover:underline px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Vin</a>
-              </div>
-            </li>
-            <li>
-              <a href="contact.php" class="block no-underline hover:underline py-2 text-white hover:scale-110 transition-transform relative group">
-                Contact
-                <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
-              </a>
-            </li>
-          </ul>
-          <div class="md:ml-6 mt-4 md:mt-0 flex justify-center">
-            <a href="/" class="bg-[#6A664B] no-underline hover:underline  hover:text-[#27ae60] text-white px-4 py-2 rounded-md transition-colors">Connexion</a>
+        <!-- About Dropdown -->
+        <div class="relative group">
+          <button class="text-white relative group transition">
+            About
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+          </button>
+          <div
+            class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-md mt-2 w-40 z-50">
+            <a href="entreprise.php" class="block px-4 py-2 hover:bg-gray-100">Entreprise</a>
+            <a href="partenaires.php" class="block px-4 py-2 hover:bg-gray-100">Partenaires</a>
           </div>
         </div>
-      </div>
-    </div>
-  </nav>
 
-</header>
+        <!-- Produits Dropdown -->
+        <div class="relative group">
+          <button class="text-white relative group transition">
+            Produits
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+          </button>
+          <div
+            class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-md mt-2 w-40 z-50">
+            <a href="produits.php" class="block px-4 py-2 hover:bg-gray-100">Jus</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sirop</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Vin</a>
+          </div>
+        </div>
+
+        <a href="contact.php" class="group relative text-white transition">
+          Contact
+          <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+        </a>
+
+        <a href="login.php" class="bg-[#6A664B] text-white px-4 py-2 rounded-md hover:bg-[#27ae60] transition-colors">Connexion</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu"
+      class="md:hidden hidden flex-col bg-[#2D8740] space-y-4 px-4 py-4 font-medium">
+      <a href="index.php" class="block text-white hover:text-yellow-300">Home</a>
+      <a href="entreprise.php" class="block text-white hover:text-yellow-300">Entreprise</a>
+      <a href="partenaires.php" class="block text-white hover:text-yellow-300">Partenaires</a>
+      <a href="produits.php" class="block text-white hover:text-yellow-300">Produits</a>
+      <a href="contact.php" class="block text-white hover:text-yellow-300">Contact</a>
+      <a href="/" class="block text-white bg-[#6A664B] hover:bg-[#27ae60] py-2 rounded-md text-center">Connexion</a>
+    </div>
+  </header>
+
+  <script>
+    const button = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+  <?php include_once "script.php"; ?>
+</body>
+</html>
+
