@@ -27,7 +27,7 @@
                 <div class="hidden absolute rounded-[15px] bg-[#2D8740] right-[10%] md:relative w-[25%] md:flex md:items-center md:w-auto" id="navbar-menu">
                     <ul class="flex flex-col mt-4 md:flex-row items-center md:mt-0 md:space-x-6">
                         <li>
-                            <a href="/" class="block py-2 text-white hover:scale-110 transition-transform relative group">
+                            <a href="index.php" class="block py-2 text-white hover:scale-110 transition-transform relative group">
                                 Home
                                 <span class="absolute w-0 h-px bg-white bottom-0 left-1/2 group-hover:w-full group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                             </a>
