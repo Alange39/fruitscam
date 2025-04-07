@@ -12,7 +12,7 @@
   <title>Document</title>
 </head>
     
-    <footer class="bg-[#CCCCCE] py-6 px-3 text-gray-800 text-xs">
+    <footer class="bg-[#CCCCCE] py-6 px-3 text-gray-800 text-xs w-screen">
         <!-- Section supérieure avec logo et newsletter -->
         <div class="flex flex-col items-center mb-4 text-center">
             <!-- Logo de l'entreprise -->
@@ -24,7 +24,7 @@
             <div class="mb-2">
                 <h3 class="mb-2 text-sm font-medium">Abonnez-vous à notre newsletter</h3>
                 <div class="flex max-w-sm w-full">
-                    <input type="email" placeholder="Votre adresse email" class="flex-1 py-1.5 px-2 border border-gray-300 rounded-l-md text-xs">
+                    <input type="email" placeholder="Votre adresse email" class="flex-1 py-1.5 bg-[ffffff] px-2 border border-gray-300 rounded-l-md text-xs">
                     <button type="submit" class="py-1.5 px-3 bg-[#6A664B] text-white border-none rounded-r-md cursor-pointer text-xs hover:bg-gray-700 transition-colors">S'abonner</button>
                 </div>
             </div>

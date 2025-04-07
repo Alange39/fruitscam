@@ -9,28 +9,22 @@ try {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau des Produits</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="p-10 ">
-    <div class="overflow-x-auto w-[1300px] ml-[110px]">
-        <table class="min-w-full bg-white border w-[1000px] border-gray-300 shadow-md rounded-lg">
+
+    <div class="overflow-x-auto w-screen flex justify-center mb-4">
+        <table class="min-w-full bg-white border w-screen border-gray-300 shadow-md rounded-lg">
             <thead>
                 <tr class="bg-green-500 text-white">
-                    <th class="py-2 px-4 border">Nom</th>
-                    <th class="py-2 px-4 border">Image</th>
-                    <th class="py-2 px-4 border">Ingrédient</th>
-                    <th class="py-2 px-4 border">Prix</th>
-                    <th class="py-2 px-4 border">Description</th>
-                    <th class="py-2 px-4 border">Quantité</th>
-                    <th class="py-2 px-4 border">Catégorie</th>
-                    <th class="py-2 px-4 border">Action</th>
+                    <th class="p-1  border">Nom</th>
+                    <th class="p-1  border">Image</th>
+                    <th class="p-1  border">Ingrédient</th>
+                    <th class="p-1  border">Prix</th>
+                    <th class="p-1  border">Description</th>
+                    <th class="p-1  border">Quantité</th>
+                    <th class="p-1  border">Catégorie</th>
+                    <th class="p-1  border">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,13 +32,13 @@ try {
                   foreach ($stmt->fetchAll() as $k => $v) {
                 ?>
                 <tr class="border">
-                    <td class="py-2 px-4 border"><?=$v["noms"]?></td>
-                    <td class="py-2 px-4 border"><img src="./upload/<?=$v['photos']?>" alt="Produit" class="w-16 h-16 object-cover"></td>
-                    <td class="py-2 px-4 border"><?=$v['ingredient']?></td>
-                    <td class="py-2 px-4 border"><?=$v['prix']?></td>
-                    <td class="py-2 px-4 border"><?=$v["descriptions"]?></td>
-                    <td class="py-2 px-4 border"><?=$v["quantites"]?></td>
-                    <td class="py-2 px-4 border"><?=$v["categoties"]?></td>
+                    <td class="p-1  border"><?=$v["noms"]?></td>
+                    <td class="p-1  border"><img src="./upload/<?=$v['photos']?>" alt="Produit" class="w-16 h-16 object-cover"></td>
+                    <td class="p-1  border"><?=$v['ingredient']?></td>
+                    <td class="p-1  border"><?=$v['prix']?></td>
+                    <td class="p-1  border"><?=$v["descriptions"]?></td>
+                    <td class="p-1  border"><?=$v["quantites"]?></td>
+                    <td class="p-1  border"><?=$v["categoties"]?></td>
                     <td class="py-1 px-4   gap-2 jutify-center items-center">
 
                         <a href="edit_product.php?id=<?=$v["id"]?>" class="text-blue-500 hover:text-blue-700 flex">
@@ -62,9 +56,8 @@ try {
             </tbody>
         </table>
     </div>
-    
     <script>
         lucide.createIcons();
     </script>
-</body>
-</html>
+
+

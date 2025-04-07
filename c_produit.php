@@ -1,13 +1,14 @@
 <?php
-require ("connect_to_bd.php");
+require("connect_to_bd.php");
 
 try {
-    $id=$_GET['id'];
-    $stmt= $conn->prepare("SELECT * FROM produits WHERE id=?");
-    $stmt->execute(array("$id")) ;
+    $id = $_GET['id'];
+    $stmt = $conn->prepare("SELECT * FROM produits WHERE id=?");
+    $stmt->execute(array("$id"));
 } catch (PDOException $e) {
-    echo "error" . $e->getMessage() ;
+    echo "error" . $e->getMessage();
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -16,36 +17,44 @@ try {
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body class="font-[Roboto]">
-          <?php include_once"head.php";?>
-   <?php
-   include_once "head.php";
-   ?>
-   <?php
-     foreach ($stmt->fetchAll() as $k=> $v) {
-        
-     }
-   ?>
+
+
+    <?php
+    include_once "head.php";
+
+    foreach ($stmt->fetchAll() as $k => $v) {
+    }
+
+    try {
+        $req = $conn->prepare("SELECT * FROM produits WHERE noms=?");
+        $req->execute(array($v["noms"]));
+    } catch (\Throwable $th) {
+        echo "error";
+        exit;
+    }
+    ?>
     <section class="mt-[50px] ">
         <div class="flex justify-center gap-[12rem] items-center max-lg:flex-col">
             <div>
 
 
-                <img src="upload/<?=$v['photos']?>" class="w-[50hv] h-screen">
+                <img src="upload/<?= $v['photos'] ?>" class="w-[50hv] h-screen">
 
 
             </div>
-                            
+
             <div>
                 <h1 class="text-[#F3C63F] text-5xl my-[50px]"><?php
-                $nom= strtoupper($v["noms"]);
-                echo$nom;
-                  ?>
-                  </h1>
+                                                                $nom = strtoupper($v["noms"]);
+                                                                echo $nom;
+                                                                ?>
+                </h1>
 
                 <h2 class="text-2xl font-[800] mb-[15px]">description :</h2>
 
@@ -80,27 +89,26 @@ try {
         <div class="flex justify-center gap-12 items-center">
 
             <div class="flex w-[50%] gap-[90px] mt-2">
+                <?php
+                foreach ($req as $a => $b) {
+                ?>
+                    <a href="c_produit.php?id=<?= $b["id"] ?>">
+                        <div class=" inline-block text-center">
+                            <img src="upload/<?= $b['photos'] ?>" alt="" class="w-[70px] h-[70px] border-1 border-solid border-black">
+                            <h5 class="text-black"><?= $b['quantites'] ?></h5>
+                            <h4 class="text-black"><?= $b["prix"] ?></h4>
+                        </div>
+                    </a>
+                <?php
+                }
+                ?>
 
-                <div class=" inline-block text-center">
-                    <img src="./img/orange pte.png" alt="" class="w-[70px] h-[70px] border-1 border-solid border-black">
-                    <h5>33cl</h5>
-                    <h4>650Fcfa</h4>
-                </div>
 
-                <div class=" inline-block text-center">
-                    <img src="./img/grande orange.png" alt="" class="w-[70px] h-[70px] border-1 border-solid border-black">
-                    <h5>1L</h5>
-                    <h4>650Fcfa</h4>
-                </div>
-
-                <div class=" inline-block text-center">
-                    <img src="./img/orange pte.png" alt="" class="w-[70px] h-[70px] border-1 border-solid border-black">
-                    <h5>5L</h5>
-                    <h4>650Fcfa</h4>
-                </div>
 
             </div>
-            <button class="p-2 bg-[#2D8740] inline-block rounded-[10px]">Commander</button>
+            <a href="https://wa.me/237" target="_blank">
+                <button class="p-2 bg-[#2D8740] inline-block rounded-[10px] text-black">Commander</button>
+            </a>
 
         </div>
     </section>
@@ -145,8 +153,10 @@ try {
     </section>
 
     <?php
-       include_once "footer.php" ;
-       include_once "script.php";
+    include_once "footer.php";
+
+    include_once "script.php";
     ?>
 </body>
+
 </html>
