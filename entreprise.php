@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
   <link rel="stylesheet" href="assets/js/Script.js">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Document</title>
 </head>
+
 <body class="bg-gray-100">
 
-  <?php include_once"head.php";?>
+  <?php include_once "head.php"; ?>
 
   <header class="relative w-full h-[570px] overflow-hidden">
     <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
-      
+
       <!-- Slide 1 -->
       <div class="min-w-full h-full relative">
         <img src="assets/images/jus-fruits.jpg" alt="Image 1" class="w-full h-full object-cover" />
@@ -149,56 +151,60 @@
     <p class="text-sm pt-[30px] max-w-[700px] mx-auto">Notre vision est de devenir le leader du marché camerounais des jus naturels frais de haute qualité, tout en restant fidèles à nos valeurs écoresponsables et sociales.</p>
   </section>
 
-  <section class="bg-green-600 text-white text-center pt-[120px] pb-[80px]">
-    <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full mx-auto mt-[-75px]">
+  <section class="bg-green-600 text-white text-center ">
+    <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full mx-auto mt-[-75px] relative top-[-80px] mt-[50px]">
     <p>
-      Bienvenue chez Fruitscam !<br>
-      Nous croyons en l'importance de l'innovation et de la durabilité. Notre mission est de fournir des produits de qualité tout en respectant notre environnement.
+      Bienvenue chez Fruitscam ! <br>
+
+      Chez Fruitscam, nous croyons en l'importance de l'innovation et de la durabilité. Notre mission est de fournir des produits de qualité tout en respectant notre environnement. Nous nous engageons à adopter des pratiques écoresponsables et à soutenir les communautés locales. Notre équipe, passionnée et dévouée, travaille chaque jour pour garantir que nos clients reçoivent le meilleur. En valorisant le respect et la collaboration, nous créons un environnement de travail positif et dynamique.
+      Nous vous invitons à explorer notre univers et à rejoindre notre parcours vers un avenir plus durable. Merci de faire partie de notre aventure ! <br>
+      Cordialement, <br> BAYEMI Francoise <br> Fruitscam
     </p>
   </section>
   <script>
-  let index = 0;
-  const slides = document.querySelectorAll("#carousel > div");
-  const totalSlides = slides.length;
-  const carousel = document.getElementById("carousel");
+    let index = 0;
+    const slides = document.querySelectorAll("#carousel > div");
+    const totalSlides = slides.length;
+    const carousel = document.getElementById("carousel");
 
-  // Fonction pour mettre à jour l'état des boutons
-  function updateButtons() {
-    // Boucle à travers tous les slides pour mettre à jour les boutons
-    for (let i = 0; i < totalSlides; i++) {
-      const buttons = document.querySelector(`#buttons${i + 1}`).children;
-      for (let j = 0; j < buttons.length; j++) {
-        if (j === index) {
-          buttons[j].classList.add('bg-black');
-          buttons[j].classList.remove('bg-gray-300');
-        } else {
-          buttons[j].classList.add('bg-gray-300');
-          buttons[j].classList.remove('bg-black');
+    // Fonction pour mettre à jour l'état des boutons
+    function updateButtons() {
+      // Boucle à travers tous les slides pour mettre à jour les boutons
+      for (let i = 0; i < totalSlides; i++) {
+        const buttons = document.querySelector(`#buttons${i + 1}`).children;
+        for (let j = 0; j < buttons.length; j++) {
+          if (j === index) {
+            buttons[j].classList.add('bg-black');
+            buttons[j].classList.remove('bg-gray-300');
+          } else {
+            buttons[j].classList.add('bg-gray-300');
+            buttons[j].classList.remove('bg-black');
+          }
         }
       }
     }
-  }
 
-  // Fonction pour aller à un slide spécifique
-  function goToSlide(slideIndex) {
-    index = slideIndex;
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-    updateButtons();
-  }
+    // Fonction pour aller à un slide spécifique
+    function goToSlide(slideIndex) {
+      index = slideIndex;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+      updateButtons();
+    }
 
-  // Fonction pour passer au slide suivant
-  function showNextSlide() {
-    index = (index + 1) % totalSlides;
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-    updateButtons();
-  }
+    // Fonction pour passer au slide suivant
+    function showNextSlide() {
+      index = (index + 1) % totalSlides;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+      updateButtons();
+    }
 
-  setInterval(showNextSlide, 5000);
-  updateButtons(); // Initialiser les boutons au chargement
-</script>
+    setInterval(showNextSlide, 5000);
+    updateButtons(); // Initialiser les boutons au chargement
+  </script>
 
 
-  <?php include_once"footer.php";?>
+  <?php include_once "footer.php"; ?>
 
 </body>
+
 </html>

@@ -16,7 +16,7 @@
 
 </head>
 <body class="bg-[url('assets/images/ananas-large.jpg')]">
-          <?php include_once"her.php";?>
+          <?php include_once"head.php";?>
 
           <div class="ml-[970px] text-black pt-[30px]">
             
