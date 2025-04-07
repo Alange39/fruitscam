@@ -22,7 +22,7 @@ try {
 
 <body class="font-sans bg-gray-50 text-gray-800">
 
-    <?php include_once "her.php"; ?>
+    <?php include_once "head.php"; ?>
 
     <!-- Bannière principale -->
     <section class="bg-[url('./img/Image.png')] bg-cover bg-center h-screen relative">
