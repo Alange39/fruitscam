@@ -1,4 +1,4 @@
-<?php
+ <?php
 require("connect_to_bd.php");
 
 try {
@@ -96,7 +96,7 @@ try {
                         <div class=" inline-block text-center">
                             <img src="upload/<?= $b['photos'] ?>" alt="" class="w-[70px] h-[70px] border-1 border-solid border-black">
                             <h5 class="text-black"><?= $b['quantites'] ?></h5>
-                            <h4 class="text-black"><?= $b["prix"] ?></h4>
+                            <h4 class="text-black"><?= $b["prix"] ?>F</h4>
                         </div>
                     </a>
                 <?php

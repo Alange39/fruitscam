@@ -11,8 +11,9 @@
   <header class="bg-[#2D8740] text-white">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
       <!-- Logo -->
-      <a href="#">
-        <img src="logo.png" alt="Fruitscam" class="h-8" />
+      <a href="#" class="flex block items-center space-x-1 text-white   transition" >
+        <img src="assets/images/Image.png" alt="Fruitscam" class="h-8" />
+        <h2 class="font-[600] group relative text-[20px]">Fruitscam</h2>
       </a>
 
       <!-- Mobile Menu Button -->
