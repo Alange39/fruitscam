@@ -38,11 +38,11 @@ try {
     <section class="px-4 py-10 sm:px-6 md:px-10 lg:px-20">
         <h2 class="text-[#F3C63F] text-2xl text-center font-bold mb-10">Collection de jus</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
             <?php foreach ($stmt->fetchAll() as $k => $v) { ?>
-                <div class="border border-zinc-200 rounded-xl p-4 w-[90%] max-w-[300px] bg-white shadow-md transition hover:shadow-lg">
+                <div class="border border-zinc-200 rounded-xl p-5 w-full max-w-[350px] bg-white shadow-md transition hover:shadow-lg">
                     <div class="overflow-hidden rounded-md">
-                        <img src="upload/<?= $v["photos"] ?>" alt="<?= $v["noms"] ?>" class="w-full h-[200px] object-cover">
+                        <img src="upload/<?= $v["photos"] ?>" alt="<?= $v["noms"] ?>" class="w-full h-[250px] object-cover rounded-md">
                     </div>
                     <h4 class="text-xl font-bold mt-3"><?= $v["noms"] ?></h4>
                     <h5 class="text-zinc-500 font-light mt-1">Prix : <?= $v["prix"] ?>f</h5>
@@ -53,6 +53,7 @@ try {
             <?php } ?>
         </div>
     </section>
+    
 
     <?php include_once "footer.php"; ?>
 </body>

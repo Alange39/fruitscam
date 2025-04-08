@@ -47,9 +47,9 @@ if (isset($_POST['submit'])) {
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+<?php @include 'head.php'; ?>
 <body class="bg-gray-100">
 
-<?php @include 'head.php'; ?>
 
 <section class="min-h-screen bg-white flex items-center justify-center">
   <div class="w-full max-w-5xl bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
