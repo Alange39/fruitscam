@@ -72,7 +72,7 @@
   <div class="bg-gray-100 pt-[30px]">
     <h1 class="text-center text-3xl max-md:text-lg pt-[30px]">Entre Savoir-Faire Et Traditions</h1>
 
-    <div class="  mx-[185px] pb-[40px] pt-[30px] max-md:text-sm inline-block">
+    <div class="max-md:mx-[15px]  mx-[185px] pb-[40px] pt-[30px] max-md:text-sm inline-block">
       <p class="inline-block">
         Depuis son lancement en 1996 par sa promotrice Madame Bayemi Francoise, l'entreprise Fruitscam a connu une évolution remarquable grâce à l'innovation et au dévouement de son équipe majoritairement constituée de femmes. Celles-ci mettent en avant leurs compétences pour valoriser les valeurs authentiques des fruits de leurs régions.
       </p>
@@ -138,7 +138,7 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
    <section class="bg-white pt-[60px] pb-[80px]">
   <p class="text-center pt-[80px] text-3xl max-md:text-2xl">Nos Valeurs</p>
 
-  <section class="flex flex-wrap gap-[130px] justify-center pt-[40px] max-md:px-[10px]">
+  <section class="flex flex-wrap max-md:gap-[30px] gap-[130px] justify-center pt-[40px] max-md:px-[10px]">
     <div class="inline-block">
       <img src="assets/images/Vector (1).png" alt="" class="h-[20px] w-[20px] mx-auto">
       <p class="pt-[10px] font-bold text-center">Création des Richesses</p>
@@ -166,7 +166,7 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
 
   <!-- Partie presentant les missions et visions -->
 
-  <section class="flex gap-[170px] justify-center mt-[50px]">
+  <section class="flex gap-[170px] max-md:gap-[50px] justify-center mt-[50px]">
   <section class="bg-gray-100 mt-[40px] pb-[80px] inline-block max-md:px-[10px] w-[350px]">
     <p class="text-xl text-yellow-400 underline text-center">Notre Vision</p>
     <p class="text-sm pt-[20px] max-w-[700px] mx-auto">
@@ -185,8 +185,10 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
 
   <!-- partie du speech de la DG -->
 
-  <section class="bg-green-600 text-white text-center px-[100px] pt-[120px] pb-[80px]">
-    <img src="assets/images/DG.jpg" alt="" class="h-[188px] absolute  w-[170px]  rounded-full ml-[37%] mt-[-200px]">
+  <div class="flex justify-center max-md:pt-[20px] max-md:pb-[35px]  ">
+    <img src="assets/images/DG.jpg" alt="" class="max-md:h-[230px] h-[188px] max-md:w-[190px]  w-[170px] max-md:rounded-none rounded-full  relative top-[100px]">
+  </div>
+  <section class="bg-green-600 text-white text-center px-[100px] pt-[100px] pb-[80px]">
     <p class="mt-[20px]">  Bienvenue chez Fruitscam ! </p>
 <p>
 Chez Fruitscam, nous croyons en l'importance de l'innovation et de la durabilité. Notre mission est de fournir des produits de qualité tout en respectant notre environnement. Nous nous engageons à adopter des pratiques écoresponsables et à soutenir les communautés locales.   Notre équipe, passionnée et dévouée, travaille chaque jour pour garantir que nos clients reçoivent le meilleur. En valorisant le respect et la collaboration, nous créons un environnement de travail positif et dynamique.
