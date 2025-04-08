@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['admin_nom'])) {
+    header('location:index.php');
+    die;
+}
 if (isset($_POST['sub'])) {
     
     include_once "connect_to_bd.php";

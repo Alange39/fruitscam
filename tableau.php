@@ -1,3 +1,5 @@
+
+
 <?php
 include_once "connect_to_bd.php";
 
@@ -13,8 +15,8 @@ try {
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <div class="overflow-x-auto w-screen flex justify-center mb-4">
-        <table class="min-w-full bg-white border w-screen border-gray-300 shadow-md rounded-lg">
+    <div class="overflow-x-auto max-md:w-full max-md:mx-[2px] max-md:inline-block mx-[60px] flex justify-center mb-4">
+        <table class="min-w-full bg-white border w-screen border-gray-300  shadow-md rounded-lg">
             <thead>
                 <tr class="bg-green-500 text-white">
                     <th class="p-1  border">Nom</th>

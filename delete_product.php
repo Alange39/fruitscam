@@ -1,4 +1,11 @@
+
 <?php
+session_start();
+
+if (!isset($_SESSION['admin_nom'])) {
+header('location:index.php');
+die;
+}
 include_once "connect_to_bd.php";
 
 $id = $_GET["id"];

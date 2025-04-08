@@ -74,14 +74,16 @@
   <div class="bg-gray-100 pt-[30px]">
     <h1 class="text-center text-3xl max-md:text-lg pt-[30px]">Entre Savoir-Faire Et Traditions</h1>
 
-    <div class="max-w-4xl mx-auto text-center pt-[30px] max-md:text-sm">
-      <p>
+    <div class="max-md:mx-[15px]  mx-[185px] pb-[40px] pt-[30px] max-md:text-sm inline-block">
+      <p class="inline-block">
         Depuis son lancement en 1996 par sa promotrice Madame Bayemi Francoise, l'entreprise Fruitscam a connu une évolution remarquable grâce à l'innovation et au dévouement de son équipe majoritairement constituée de femmes. Celles-ci mettent en avant leurs compétences pour valoriser les valeurs authentiques des fruits de leurs régions.
       </p>
     </div>
   </div>
 
-  <!-- Nos Services -->
+  <!-- presentation des differents services -->
+  <section class="bg-white">
+
   <p class="text-center pt-[80px] text-3xl max-md:text-2xl">Nos Services d'Expertise en Fabrication de Jus</p>
 
   <!-- premier service -->
@@ -90,9 +92,11 @@
       <img src="assets/images/ravitaillement.webp" alt="" class="h-[320px] w-[400px] max-md:w-full max-md:h-auto">
     </div>
     <div class="pt-[40px] max-md:px-[10px]">
-      <p class="text-yellow-400 text-xl max-md:text-lg">LE SERVICE D'APPROVISIONNEMENT</p>
+      <p class="text-yellow-400 text-xl max-md:text-lg text-center">LE SERVICE D'APPROVISIONNEMENT</p>
       <p class="w-[500px] max-md:w-full max-md:text-sm pt-[30px]">
-        Notre service d’approvisionnement sélectionne avec soin des fournisseurs réputés, garantissant des fruits de première qualité et de saison. Nous privilégions des producteurs engagés dans des pratiques durables pour assurer fraîcheur et goût.
+        Notre service d’approvisionnement choisit soigneusement des fournisseurs réputés pour garantir des fruits de première qualité et de saison. Nous privilégions des producteurs engagés dans des pratiques durables, assurant ainsi fraîcheur et goût.
+
+Nos moyens de transport, adaptés et impeccables, préservent la qualité des fruits jusqu’à leur arrivée. Cette approche professionnelle nous permet de créer des jus savoureux et de haute qualité.
       </p>
     </div>
   </section>
@@ -100,9 +104,11 @@
   <!-- Deuxième service -->
   <section class="pt-[60px] max-md:block max-md:px-[10px] flex gap-[100px] justify-center">
     <div class="pt-[40px] max-md:px-[10px]">
-      <p class="text-yellow-400 text-xl max-md:text-lg">LE SERVICE DE PRODUCTION</p>
+      <p class="text-yellow-400 text-xl max-md:text-lg text-center">LE SERVICE DE PRODUCTION</p>
       <p class="w-[500px] max-md:w-full max-md:text-sm pt-[30px]">
-        Notre service des production utilise des techniques semi-industrielles pour garantir des jus de qualité supérieure. Equipé de machines modernes telles que la broyeuse, la tamiseuse, le séchoir, et autres.
+     Notre service de production utilise des techniques semi-industrielles pour garantir des jus de qualité supérieure. Équipés de machines modernes telles que la broyeuse, la tamiseuse, le séchoir, l’encapsuleur, l’appertiseur et le pasteurisateur, nous optimisons chaque étape du processus.
+
+Nous respectons strictement les normes en vigueur pour assurer la qualité et la sécurité de nos produits. Cette approche nous permet de créer des jus savoureux, tout en préservant leur fraîcheur et leurs bienfaits naturels.
       </p>
     </div>
     <div>
@@ -116,50 +122,81 @@
       <img src="assets/images/controle.png" alt="" class="h-[320px] w-[400px] max-md:w-full max-md:h-auto">
     </div>
     <div class="pt-[40px] max-md:px-[10px]">
-      <p class="text-yellow-400 text-xl max-md:text-lg">LE SERVICE DE CONTROLE QUALITE</p>
+      <p class="text-yellow-400 text-xl max-md:text-lg text-center">LE SERVICE DE CONTROLE QUALITE</p>
       <p class="w-[500px] max-md:w-full max-md:text-sm pt-[30px]">
-        Notre service de Contrôle Qualité veille à la conformité de chaque étape du processus de production. Nous inspectons la qualité des matières premières et surveillons la fabrication des jus pour garantir des produits sûrs et de haute qualité.
+       Notre service de Contrôle Qualité veille à la conformité de chaque étape du processus de production.
+
+Nous inspectons la qualité des matières premières, assurons un nettoyage rigoureux et surveillons attentivement la fabrication des jus.
+
+Chaque bouteille est également contrôlée avant sa mise en vente.
+
+Cette vigilance constante garantit des produits sûrs et de haute qualité, offrant ainsi à nos clients des jus savoureux et fiables.
       </p>
     </div>
   </section>
+  </section>
 
   <!-- Nos Valeurs -->
+   <section class="bg-white pt-[60px] pb-[80px]">
   <p class="text-center pt-[80px] text-3xl max-md:text-2xl">Nos Valeurs</p>
 
-  <section class="flex flex-wrap gap-[40px] justify-center pt-[40px] max-md:px-[10px]">
-    <div class="text-center">
+  <section class="flex flex-wrap max-md:gap-[30px] gap-[130px] justify-center pt-[40px] max-md:px-[10px]">
+    <div class="inline-block">
       <img src="assets/images/Vector (1).png" alt="" class="h-[20px] w-[20px] mx-auto">
-      <p class="pt-[10px] font-bold">Création des Richesses</p>
-      <p class="text-xs pt-[16px] w-[165px] mx-auto">Chez Fruitscam, nous croyons que créer des richesses dépasse la simple génération de profits. Notre engagement va au-delà des résultats financiers.</p>
+      <p class="pt-[10px] font-bold text-center">Création des Richesses</p>
+      <p class="text-xs pt-[8px] w-[165px] mx-auto"> Chez Fruitscam, nous croyons 
+ que créer des richesses dépasse la simple génération de profits.
+ Notre engagement va au-delà des résultats financiers.</p>
     </div>
 
-    <div class="text-center">
+    <div class="inline-block">
       <img src="assets/images/heart (1) 1.png" alt="" class="h-[20px] w-[20px] mx-auto">
-      <p class="pt-[10px] font-bold">Passion</p>
-      <p class="text-xs pt-[16px] w-[215px] mx-auto">Cette passion pour le jus naturel ne se limite pas seulement à la production; elle se ressent également dans l'interaction avec nos clients. Chaque gorgée reflète notre travail d'équipe et notre vision commune.</p>
+      <p class="pt-[10px] font-bold text-center">Passion</p>
+      <p class="text-xs pt-[8px] w-[220px] mx-auto">
+        Cette passion pour le jus naturel ne se limite pas seulement à la production ; elle se ressent également dans l'interaction avec nos clients, à qui ils transmettent leur amour du produit. Pour nous, chaque gorgée est le reflet d'un travail d'équipe, d'une vision commune et d'une volonté de partager le meilleur de la nature.
+      </p>
     </div>
 
-    <div class="text-center">
+    <div class="inline-block">
       <img src="assets/images/Group.png" alt="" class="h-[20px] w-[20px] mx-auto">
-      <p class="pt-[10px] font-bold">Respect</p>
-      <p class="text-xs pt-[16px] w-[215px] mx-auto">Le respect est une valeur fondamentale chez Fruitscam, garantissant un environnement de travail harmonieux et productif.</p>
+      <p class="pt-[10px] font-bold text-center">Respect</p>
+      <p class="text-xs pt-[8px] w-[220px] mx-auto">
+        Le respectLe respect est une valeur fondamentale au sein de l'entreprise Fruitscam. Il constitue un outil essentiel pour garantir un environnement de travail harmonieux et productif. En cultivant le respect entre collègues, nous favorisons une communication ouverte et une collaboration efficace. 
     </div>
   </section>
-
-  <section class="bg-gray-100 mt-[40px] pb-[80px] text-center max-md:px-[10px]">
-    <p class="text-xl text-yellow-400 underline">Notre Vision</p>
-    <p class="text-sm pt-[30px] max-w-[700px] mx-auto">Notre vision est de devenir le leader du marché camerounais des jus naturels frais de haute qualité, tout en restant fidèles à nos valeurs écoresponsables et sociales.</p>
   </section>
 
-  <section class="bg-green-600 text-white text-center ">
-    <img src="assets/images/DG.jpg" alt="" class="h-[180px] w-[160px] rounded-full mx-auto mt-[-75px] relative top-[-80px] mt-[50px]">
-    <p>
-      Bienvenue chez Fruitscam ! <br>
+  <!-- Partie presentant les missions et visions -->
 
-      Chez Fruitscam, nous croyons en l'importance de l'innovation et de la durabilité. Notre mission est de fournir des produits de qualité tout en respectant notre environnement. Nous nous engageons à adopter des pratiques écoresponsables et à soutenir les communautés locales. Notre équipe, passionnée et dévouée, travaille chaque jour pour garantir que nos clients reçoivent le meilleur. En valorisant le respect et la collaboration, nous créons un environnement de travail positif et dynamique.
-      Nous vous invitons à explorer notre univers et à rejoindre notre parcours vers un avenir plus durable. Merci de faire partie de notre aventure ! <br>
-      Cordialement, <br> BAYEMI Francoise <br> Fruitscam
+  <section class="flex gap-[170px] max-md:gap-[50px] justify-center mt-[50px]">
+  <section class="bg-gray-100 mt-[40px] pb-[80px] inline-block max-md:px-[10px] w-[350px]">
+    <p class="text-xl text-yellow-400 underline text-center">Notre Vision</p>
+    <p class="text-sm pt-[20px] max-w-[700px] mx-auto">
+      Nous aspirons à devenir le leader des jus naturels frais de haute qualité au Cameroun, en respectant nos valeurs écoresponsables et sociales. Nous adoptons un modèle écoresponsable axé sur les enjeux sociaux, en recrutant des jeunes mères et des femmes en difficulté. Nous croyons en leur potentiel et, en investissant dans leur avenir, nous favorisons leur bien-être et contribuons à une société plus juste.
     </p>
+  </section>
+
+   <section class="bg-gray-100 mt-[40px] pb-[80px] w-[350px] inline-block max-md:px-[10px]">
+    <p class="text-xl text-yellow-400 underline text-center">Nos Missions</p>
+    <p class="text-sm pt-[20px] max-w-[700px] mx-auto">
+     FRUITSCAM propose des jus naturels de qualité, fabriqués par une équipe dynamique de jeunes femmes, diplômées ou non, travaillant dans de bonnes conditions. L'entreprise se consacre à des initiatives écoresponsables, notamment le recyclage et des projets innovants, afin de réduire son empreinte écologique. En inspirant clients et partenaires à adopter des pratiques durables, FRUITSCAM contribue à un avenir plus vert et à l'amélioration du bien-être des consommateurs.
+    </p>
+  </section>
+
+  </section>
+
+  <!-- partie du speech de la DG -->
+
+  <div class="flex justify-center max-md:pt-[20px] max-md:pb-[35px]  ">
+    <img src="assets/images/DG.jpg" alt="" class="max-md:h-[230px] h-[188px] max-md:w-[190px]  w-[170px] max-md:rounded-none rounded-full  relative top-[100px]">
+  </div>
+  <section class="bg-green-600 text-white text-center px-[100px] pt-[100px] pb-[80px]">
+    <p class="mt-[20px]">  Bienvenue chez Fruitscam ! </p>
+<p>
+Chez Fruitscam, nous croyons en l'importance de l'innovation et de la durabilité. Notre mission est de fournir des produits de qualité tout en respectant notre environnement. Nous nous engageons à adopter des pratiques écoresponsables et à soutenir les communautés locales.   Notre équipe, passionnée et dévouée, travaille chaque jour pour garantir que nos clients reçoivent le meilleur. En valorisant le respect et la collaboration, nous créons un environnement de travail positif et dynamique.
+Nous vous invitons à explorer notre univers et à rejoindre notre parcours vers un avenir plus durable. Merci de faire partie de notre aventure ! <br>
+Cordialement, <br> BAYEMI Francoise <br> Fruitscam
+        </p>
   </section>
   <script>
     let index = 0;

@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["admin_nom"])) {
+header('location:index.php?');
+}else{
+  "";
+}
+?>
+
 <?php    require "connect_to_bd.php";       ?>
 
 <!DOCTYPE html>
@@ -18,10 +28,10 @@
 <body class="bg-[url('assets/images/ananas-large.jpg')]">
           <?php include_once"head.php";?>
 
-          <div class="ml-[970px] text-black pt-[30px]">
+          <div class="ml-[970px] gap-[20px] max-md:px-[5px] flex max-md:ml-[10px] pt-[30px]">
             
-          <a href="" class=" text-black underline">Ajouter un produit</a>
-          <a href="" class="text-black underline pl-[30px]">Ajouter un administrateur</a>
+          <a href="creer_produit.php" class=" text-black text-green-600">Ajouter un produit</a>
+          <a href="add.php" class="text-black  text-green-600">Ajouter un administrateur</a>
 
           </div>
 
@@ -29,9 +39,9 @@
 
 
     <?php include_once"tableau.php";
-    include_once "footer.php";
     include_once "script.php";
     ?>
+   <?php require_once 'footer.php'; ?>
 
 <script src="assets/js/ad_menu.js"></script>
 </body>
