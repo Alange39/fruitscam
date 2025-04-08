@@ -1,4 +1,8 @@
 <?php
+session_start();
+?>
+
+<?php
 require_once 'BD.php';
 
 $message = ""; 

@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['admin_nom'])) {
+    header('location:index.php');
+    die;
+}
 if (isset($_POST['sub'])) {
     
     include_once "connect_to_bd.php";
@@ -8,7 +13,6 @@ if (isset($_POST['sub'])) {
     }
 
     //recuperation des informations a stocker dans la bd
-
     $nom = $_POST['nom'];
     $prix = $_POST['prix'];
     $descript = $_POST['descriptions'];
