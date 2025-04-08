@@ -153,7 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
         </div>
         <div class="flex-1 max-w-full md:max-w-[50%] flex">
-            <img src="images/notebook-1130742_640.jpg" alt="Contact Image" 
+            <img src="image/notebook-1130742_640.jpg" alt="Contact Image" 
                 class="w-full h-full object-cover rounded-md">
         </div>
     </div>
@@ -163,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- Debut plan de localisation -->
 <section class="w-4/5 max-w-[1200px] mx-auto p-8">
     <div class="rounded-2xl shadow-md relative overflow-hidden h-[400px]">
-        <img src="images/plan.jpg" alt="Plan de localisation" class="w-full h-full object-cover block">
+        <img src="image/plan.jpg" alt="Plan de localisation" class="w-full h-full object-cover block">
     </div>
 </section>
 <!-- Fin plan de localisation -->
