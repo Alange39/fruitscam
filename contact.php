@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <title>Document</title>
 </head>
 <body>
-<?php include 'head.html'; ?>
+<?php include 'head.php'; ?>
 
 <?php if (!empty($successMsg)): ?>
                 <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
@@ -177,6 +177,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </section>
 
-<?php include 'footer.html'; ?>  
+<?php include 'footer.php'; ?>  
 </body>
 </html>
