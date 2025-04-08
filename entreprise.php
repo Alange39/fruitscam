@@ -167,14 +167,14 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
   <!-- Partie presentant les missions et visions -->
 
   <section class="flex gap-[170px] max-md:gap-[50px] justify-center mt-[50px]">
-  <section class="bg-gray-100 mt-[40px] pb-[80px] inline-block max-md:px-[10px] w-[350px]">
+  <section class="bg-gray-100 mt-[40px] pb-[10px] inline-block max-md:px-[10px] w-[350px]">
     <p class="text-xl text-yellow-400 underline text-center">Notre Vision</p>
     <p class="text-sm pt-[20px] max-w-[700px] mx-auto">
       Nous aspirons à devenir le leader des jus naturels frais de haute qualité au Cameroun, en respectant nos valeurs écoresponsables et sociales. Nous adoptons un modèle écoresponsable axé sur les enjeux sociaux, en recrutant des jeunes mères et des femmes en difficulté. Nous croyons en leur potentiel et, en investissant dans leur avenir, nous favorisons leur bien-être et contribuons à une société plus juste.
     </p>
   </section>
 
-   <section class="bg-gray-100 mt-[40px] pb-[80px] w-[350px] inline-block max-md:px-[10px]">
+   <section class="bg-gray-100 mt-[40px] pb-[10px] w-[350px] inline-block max-md:px-[10px]">
     <p class="text-xl text-yellow-400 underline text-center">Nos Missions</p>
     <p class="text-sm pt-[20px] max-w-[700px] mx-auto">
      FRUITSCAM propose des jus naturels de qualité, fabriqués par une équipe dynamique de jeunes femmes, diplômées ou non, travaillant dans de bonnes conditions. L'entreprise se consacre à des initiatives écoresponsables, notamment le recyclage et des projets innovants, afin de réduire son empreinte écologique. En inspirant clients et partenaires à adopter des pratiques durables, FRUITSCAM contribue à un avenir plus vert et à l'amélioration du bien-être des consommateurs.
