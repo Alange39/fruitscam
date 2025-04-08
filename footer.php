@@ -25,7 +25,7 @@
                 <h3 class="mb-2 text-sm font-medium">Abonnez-vous à notre groupe whatsapp</h3>
                 <div class="flex max-w-sm w-full">
                     <input type="num_tel" placeholder="Votre numero de telephone" class="flex-1 py-1.5 px-2 border border-gray-300 rounded-l-md text-xs">
-                    <button type="submit" onclick="window.location.href='https://chat.whatsapp.com/FYk71hWcCgH2IRvK6LXTiT';" class="py-1.5 px-3 bg-[#6A664B] text-white border-none rounded-r-md cursor-pointer text-xs hover:bg-gray-700 transition-colors">S'abonner</button>
+                    <button type="submit" onclick="window.location.href='https://chat.whatsapp.com/FYk71hWcCgH2IRvK6LXTiT';" class="py-1.5 px-3 bg-[#6A664B] text-white border-none rounded-r-md cursor-pointer text-xs hover:bg-gray-700 transition-colors">Nous rejoindre</button>
                 </div>
             </div>
         </div>
