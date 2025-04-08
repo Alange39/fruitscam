@@ -13,7 +13,6 @@ if (isset($_POST['sub'])) {
     }
 
     //recuperation des informations a stocker dans la bd
-
     $nom = $_POST['nom'];
     $prix = $_POST['prix'];
     $descript = $_POST['descriptions'];
