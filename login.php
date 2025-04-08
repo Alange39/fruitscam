@@ -45,10 +45,11 @@ if (isset($_POST['submit'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Connexion</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome pour les icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body class="bg-gray-100">
+
+<?php @include 'head.php'; ?>
 
 <section class="min-h-screen bg-white flex items-center justify-center">
   <div class="w-full max-w-5xl bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
@@ -61,19 +62,20 @@ if (isset($_POST['submit'])) {
       </div>
 
       <h2 class="text-xl font-semibold mb-6 text-gray-700">Connectez-vous à votre compte</h2>
-      <?php if ($error): ?>
-            <p class="text-red-500 text-center mt-2"><?= $error ?></p>
-        <?php endif; ?>
 
-      <form>
-        <!-- Email -->
+      <?php if ($error): ?>
+        <p class="text-red-500 text-center mt-2"><?= $error ?></p>
+      <?php endif; ?>
+
+      <form method="post" action="">
+        <!-- numeros -->
         <div class="mb-4">
-          <label for="numeros" class="block text-sm font-medium text-gray-600 mb-1">Numeros</label>
+          <label for="numeros" class="block text-sm font-medium text-gray-600 mb-1">Numéros</label>
           <div class="relative">
             <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-phone"></i>
             </span>
-            <input type="numeros" id="numeros" placeholder="XXX-XXX-XXX"
+            <input type="tel" id="numeros" name="numeros" placeholder="XXX-XXX-XXX"
                    class="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A616D]"/>
           </div>
         </div>
@@ -85,25 +87,16 @@ if (isset($_POST['submit'])) {
             <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
               <i class="fas fa-lock"></i>
             </span>
-            <input type="passwords" id="passwords" placeholder="••••••••"
+            <input type="password" id="passwords" name="passwords" placeholder="••••••••"
                    class="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A616D]"/>
           </div>
         </div>
 
         <!-- Bouton de connexion -->
-        <button type="submit"
+        <button type="submit" name="submit"
                 class="w-full py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
           Se connecter
         </button>
-
-        <!-- Liens supplémentaires -->
-        <div class="flex flex-col sm:flex-row justify-between items-center mt-4 text-sm text-gray-600 gap-2">
-         
-        </div>
-
-        <div class="mt-4 text-xs text-gray-500 flex flex-wrap gap-4">
-          
-        </div>
       </form>
     </div>
 

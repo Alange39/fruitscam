@@ -1,4 +1,4 @@
-<?php
+ <?php
 require("connect_to_bd.php");
 
 try {
