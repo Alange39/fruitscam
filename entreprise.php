@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <title>Entreprise</title>
 </head>
 <body class="bg-gray-100">
 
@@ -19,8 +19,14 @@
     <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
       
       <!-- Slide 1 -->
-      <div class="min-w-full h-full relative">
-        <img src="assets/images/jus-fruits.jpg" alt="Image 1" class="w-full h-full object-cover" />
+      <div class="min-w-full h-full  relative">
+         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center  px-4">
+          <p class="text-[#ACA9AC] text-3xl sm:text-3xl  font-bold mb-4">Fruitscam est une entreprise innovante spécialisée dans la fabrication de jus de fruit naturels de haute qualité.
+          </p>
+          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4"> Nos valeurs d’authenticité et de durabilité guident   </p>
+          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">notre vision, avec un fort engagement envers la satisfaction client. </p>
+        </div>
+        <img src="assets/images/jus-fruits.jpg" alt="Image 1" class="w-full h-full object-cover opacity-10%" />
         <!-- Boutons en bas de l'image avec décalage de 75px -->
         <div class="absolute bottom-[75px] w-full flex justify-center space-x-3" id="buttons1">
           <button onclick="goToSlide(0)" class="w-4 h-4 bg-black rounded-full focus:outline-none"></button>
@@ -32,7 +38,12 @@
 
       <!-- Slide 2 -->
       <div class="min-w-full h-full relative">
-        <img src="assets/images/gingembre.jpg" alt="Image 2" class="w-full h-full object-cover" />
+           <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center  px-4">
+          <p class="text-[#ACA9AC] text-2xl sm:text-3xl  font-bold mb-4">Authenticite:
+          </p>
+          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">Chaque bouteille de jus reflète notre engagement envers des ingrédients naturels et locaux. Nous travaillons avec des agriculteurs pour assurer que nos fruits sont cueillis à maturité, préservant ainsi leurs saveurs et leurs nutriments.  </p>
+        </div>
+        <img src="assets/images/gingembre.jpg" alt="Image 2" class="w-full h-full object-cover opacity-10%" />
         <!-- Boutons en bas de l'image avec décalage de 75px -->
         <div class="absolute bottom-[75px] w-full flex justify-center space-x-3" id="buttons2">
           <button onclick="goToSlide(0)" class="w-4 h-4 bg-gray-300 rounded-full focus:outline-none"></button>
@@ -44,6 +55,11 @@
 
       <!-- Slide 3 -->
       <div class="min-w-full h-full relative">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center  px-4">
+          <p class="text-[#ACA9AC] text-2xl sm:text-3xl  font-bold mb-4">Durabilite:
+          </p>
+          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">Fruitscam s'engage à réduire son impact environnemental en adoptant des pratiques de production écoresponsables et en utilisant des emballages recyclables. Chaque geste compte pour protéger notre planète. </p>
+        </div>
         <img src="assets/images/WhatsApp Image 2025-03-28 à 17.52.32_f84f300d.jpg" alt="Image 3" class="w-full h-full object-cover" />
         <!-- Boutons en bas de l'image avec décalage de 75px -->
         <div class="absolute bottom-[75px] w-full flex justify-center space-x-3" id="buttons3">
@@ -56,7 +72,12 @@
 
       <!-- Slide 4 -->
       <div class="min-w-full h-full relative">
-        <img src="assets/images/WhatsApp Image 2025-04-04 à 10.57.24_abde390d.jpg" alt="Image 4" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center  px-4">
+          <p class="text-[#ACA9AC] text-2xl sm:text-3xl  font-bold mb-4">Satisfaction du client:
+          </p>
+          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">Notre priorité est de répondre aux besoins de nos clients. Nous prenons en compte leurs retours pour améliorer constamment nos recettes et offrir un service client exceptionnel.</p>
+        </div>
+        <img src="image/bouteilles.jpg" alt="Image 4" class="w-full h-full object-cover" />
         <!-- Boutons en bas de l'image avec décalage de 75px -->
         <div class="absolute bottom-[75px] w-full flex justify-center space-x-3" id="buttons4">
           <button onclick="goToSlide(0)" class="w-4 h-4 bg-gray-300 rounded-full focus:outline-none"></button>
