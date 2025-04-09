@@ -39,6 +39,7 @@ if (isset($_POST['sub'])) {
     try {
         $stmt = $conn->prepare("INSERT INTO produits (photos,noms,prix,descriptions,ingredient,quantites,categoties) VALUES (?,?,?,?,?,?,?)");
         $stmt->execute(array($filename, $nom, $prix, $descript, $ingeredient, $quantite, $categ));
+        header("location:admin.php");
     } catch (PDOException $e) {
         echo "error" . $e->getMessage();
     }

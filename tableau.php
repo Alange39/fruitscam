@@ -38,7 +38,7 @@ try {
                     <td class="p-1  border"><img src="./upload/<?=$v['photos']?>" alt="Produit" class="w-16 h-16 object-cover"></td>
                     <td class="p-1  border"><?=$v['ingredient']?></td>
                     <td class="p-1  border"><?=$v['prix']?></td>
-                    <td class="p-1  border"><?=$v["descriptions"]?></td>
+                    <td class="p-1  border"><?=substr(nl2br( $v["descriptions"]),0,30,)?>...</td>
                     <td class="p-1  border"><?=$v["quantites"]?></td>
                     <td class="p-1  border"><?=$v["categoties"]?></td>
                     <td class="py-1 px-4   gap-2 jutify-center items-center">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +8,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <?php @include 'head.php'; ?>
+
 <body class="bg-gray-100">
 
-  
+
 
   <header class="relative w-full h-[570px] overflow-hidden">
     <div id="carousel" class="w-full h-full flex transition-transform duration-1000 ease-in-out">
-      
+
       <!-- Slide 1 -->
       <div class="min-w-full h-full relative">
-        <img src="./image/Image 1.png" alt="Image 1" class="w-full h-full object-cover" />
+        <img src="./image/Image 1.png" alt="jus  naturel" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h2 class="text-[#ACA9AC] text-2xl sm:text-3xl font-bold mb-4">Réveillez vos sens avec nos jus naturels,</h2>
           <h2 class="text-[#ACA9AC] text-2xl sm:text-3xl font-bold mb-5">un véritable festival de saveurs!</h2>
@@ -32,7 +34,7 @@
 
       <!-- Slide 2 -->
       <div class="min-w-full h-full relative">
-        <img src="assets/images/image1.jpg" alt="Image 2" class="w-full h-full object-cover" />
+        <img src="assets/images/image1.jpg" alt="jus  naturel" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h2 class="text-[#ACA9AC] text-2xl sm:text-3xl font-bold mb-4">Découvrez notre collection de saveurs</h2>
           <p class="text-[#ACA9AC] mb-10">Alors, laquelle de nos délicieuses saveurs vous fera craquer?</p>
@@ -47,7 +49,7 @@
 
       <!-- Slide 3 -->
       <div class="min-w-full h-full relative">
-        <img src="assets/images/ravitaillement.webp" alt="Image 3" class="w-full h-full object-cover" />
+        <img src="assets/images/ravitaillement.webp" alt="jus  naturel" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h2 class="text-[#ACA9AC] text-2xl sm:text-3xl font-bold mb-4">Nos moyens de transport de nos matières premières</h2>
           <h2 class="text-[#ACA9AC] text-2xl sm:text-3xl font-bold mb-4">sont adaptés et d’une propreté sans reproche,</h2>
@@ -62,7 +64,7 @@
       </div>
 
     </div>
-</header>
+  </header>
   <main class="px-4 sm:px-6 lg:px-16">
 
     <section class="py-10">
@@ -71,14 +73,14 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Produit 1 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image6.png" alt="" class="w-full h-[300px] object-cover" />
+          <img src="./image/image6.png" alt="jus d'orange" class="w-full h-[300px] object-cover" />
           <h4 class="text-xl font-bold mt-2">Jus d'orange</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
           <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
         </div>
         <!-- Produit 2 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image4.png" alt="" class="w-full h-[300px] object-cover" />
+          <img src="./image/image4.png" alt="jus de pomme" class="w-full h-[300px] object-cover" />
           <h4 class="text-xl font-bold mt-2">Jus de pomme</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
           <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
@@ -98,7 +100,7 @@
       <!-- Tu peux ajouter ici plus de produits comme ci-dessus si nécessaire -->
     </section>
     <section class="py-10">
-      
+
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Produit 1 -->
@@ -130,7 +132,7 @@
       <!-- Tu peux ajouter ici plus de produits comme ci-dessus si nécessaire -->
     </section>
     <section class="py-10">
-      
+
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Produit 1 -->
@@ -218,4 +220,5 @@
     setInterval(showNextSlide, 5000);
   </script>
 </body>
+
 </html>

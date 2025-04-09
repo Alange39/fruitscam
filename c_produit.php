@@ -40,11 +40,11 @@
         }
         ?>
      <section class="mt-[50px] ">
-         <div class="flex justify-center gap-[12rem] items-center max-lg:flex-col">
+         <div class="flex justify-center gap-[12rem] items-center max-md:flex-col">
              <div>
 
 
-                 <img src="upload/<?= $v['photos'] ?>" class="w-[50hv] h-screen">
+                 <img src="upload/<?= $v['photos'] ?>" alt="<?=$v["noms"]?>" class="w-[50hv]  h-full">
 
 
              </div>
@@ -115,7 +115,7 @@
 
      <section class="p-4">
          <h2 class="text-[#F3C63F] text-2xl text-center pb-10">
-             Collection de jus
+             Collection de <?=$v['categoties']?>
          </h2>
 
          <?php
@@ -126,7 +126,7 @@
                 echo "error";
             }
             ?>
-            <div class="flex justify-around">
+            <div class="flex justify-around flex-wrap">
                 <?php
 
             foreach ($select->fetchAll() as $key => $val) {
@@ -134,7 +134,7 @@
              <!-- presentation des produits -->
 
 
-                 <div class="border border-zinc-200 rounded-xl p-5 w-full max-w-[350px] bg-white shadow-md transition hover:shadow-lg">
+                 <div class="border border-zinc-200 rounded-xl p-5 w-full max-w-[350px] md:w-[60%] bg-white shadow-md transition hover:shadow-lg">
                      <div class="overflow-hidden rounded-md">
                          <img src="upload/<?= $val["photos"] ?>" alt="<?= $v["noms"] ?>" class="w-full h-[250px] object-cover rounded-md">
                      </div>
