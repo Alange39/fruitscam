@@ -25,7 +25,7 @@ try {
     <?php include_once "head.php"; ?>
 
     <!-- Bannière principale -->
-    <section class="bg-[url('./img/Image.png')] bg-cover bg-center h-screen relative">
+    <section class="bg-[url('assets/images/jus.jpg')] bg-cover bg-center h-screen relative">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center px-4">
             <div>
                 <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Découvrez notre collection de saveurs</h1>

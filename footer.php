@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-   <link rel="stylesheet" href="assets/js/Script.js">
-       <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
-</head>
-    
+
     <footer class="bg-[#CCCCCE] py-6 px-3 text-gray-800 text-xs w-screen">
         <!-- Section supérieure avec logo et newsletter -->
         <div class="flex flex-col items-center mb-4 text-center">

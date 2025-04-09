@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['admin_nom'])) {
+    header('location:index.php');
+    die;
+}
 if (isset($_POST['sub'])) {
     
     include_once "connect_to_bd.php";
@@ -8,7 +13,6 @@ if (isset($_POST['sub'])) {
     }
 
     //recuperation des informations a stocker dans la bd
-
     $nom = $_POST['nom'];
     $prix = $_POST['prix'];
     $descript = $_POST['descriptions'];
@@ -57,7 +61,7 @@ if (isset($_POST['sub'])) {
 
     <form action="" method="post" enctype="multipart/form-data">
 
-        <!-- <input type="file" name="image_file" accept="iamge/*" id="" placeholder="phots du produit"><br> -->
+        <-- <input type="file" name="image_file" accept="iamge/*" id="" placeholder="phots du produit"><br> -->
 
 
         
