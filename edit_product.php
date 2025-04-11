@@ -82,10 +82,9 @@ try {
     <section class="w-4/5 max-w-[1200px] mx-auto p-8">
         <div class="bg-white rounded-2xl shadow-md overflow-hidden p-8">
             <div class="bg-[#2D8740] rounded-xl px-0.5 py-2">
-                <h2 class="mb-6 text-gray-800 text-3xl font-bold text-center">Créer un Produit</h2>
+                <h2 class="mb-6 text-gray-800 text-3xl font-bold text-center">Modifier un Produit</h2>
             </div>
             <form class="flex flex-col p-6" action="" method="post" enctype="multipart/form-data">
-
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <!-- Nom du produit -->
                     <div class="mb-4 mr-4">
