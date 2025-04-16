@@ -73,22 +73,54 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Produit 1 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image6.png" alt="jus d'orange" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus d'orange</h4>
+          <img src="image/oseille.jpg" alt="jus d'oseille" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">Jus d'oseille</h4>
+          <h5 class="text-zinc-500">Prix : 1500f</h5>
+          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2"><a href="produits.php">Voir plus</a></button>
+        </div>
+        <!-- Produit 2 -->
+        <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
+          <img src="image/curcuma.jpg" alt="vin de cerise" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">jus de curcuma</h4>
+          <h5 class="text-zinc-500">Prix : 1500f</h5>
+          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2"><a href="produits.php">Voir plus</a></button>
+        </div>
+        <!-- Produit 3 -->
+        <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
+          <img src="image/goyave.jpg" alt="" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">Jus de goyave</h4>
+          <h5 class="text-zinc-500">Prix : 1500f</h5>
+          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2"><a href="produits.php">Voir plus</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
+      <!-- Même contenu répété -->
+      <!-- Tu peux ajouter ici plus de produits comme ci-dessus si nécessaire -->
+    </section>
+    <section class="py-10">
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Produit 1 -->
+        <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
+          <img src="image/vin-cerise.jpg" alt="vin de cerise" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">vin de cerise</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
           <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
         </div>
         <!-- Produit 2 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image4.png" alt="jus de pomme" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus de pomme</h4>
+          <img src="image/vin-ananas.jpg" alt="vin d'ananas" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">vin d'ananas</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
           <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
         </div>
         <!-- Produit 3 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image5.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus de mangue</h4>
+          <img src="image/vin-passion.jpg" alt="" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">vin de passion</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
           <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
         </div>
@@ -105,56 +137,24 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Produit 1 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image6.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus d'orange</h4>
+          <img src="image/legumes.jpg" alt="" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">jus de legumes</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
-          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
+          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2"><a href="produits.php">Voir plus</a></button>
         </div>
         <!-- Produit 2 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image4.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus de pomme</h4>
+          <img src="image/baobab.jpg" alt="vin de kola" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">jus de baobab</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
-          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
+          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2"><a href="produits.php">Voir plus</a></button>
         </div>
         <!-- Produit 3 -->
         <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image5.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus de mangue</h4>
+          <img src="image/ananas.jpg" alt="" class="w-full h-[450px] object-cover" />
+          <h4 class="text-xl font-bold mt-2">Jus d'ananas</h4>
           <h5 class="text-zinc-500">Prix : 1500f</h5>
-          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
-      <!-- Même contenu répété -->
-      <!-- Tu peux ajouter ici plus de produits comme ci-dessus si nécessaire -->
-    </section>
-    <section class="py-10">
-
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Produit 1 -->
-        <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image6.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus d'orange</h4>
-          <h5 class="text-zinc-500">Prix : 1500f</h5>
-          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
-        </div>
-        <!-- Produit 2 -->
-        <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image4.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus de pomme</h4>
-          <h5 class="text-zinc-500">Prix : 1500f</h5>
-          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
-        </div>
-        <!-- Produit 3 -->
-        <div class="border border-zinc-100 rounded-[10px] p-4 bg-white">
-          <img src="./image/image5.png" alt="" class="w-full h-[300px] object-cover" />
-          <h4 class="text-xl font-bold mt-2">Jus de mangue</h4>
-          <h5 class="text-zinc-500">Prix : 1500f</h5>
-          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2">Voir plus</button>
+          <button class="w-full border border-zinc-200 text-zinc-500 rounded-[5px] mt-2"><a href="produits.php">Voir plus</a></button>
         </div>
       </div>
     </section>
@@ -181,7 +181,7 @@
 
     <h2 class="text-[#F3C63F] text-center font-semibold text-2xl mb-5">Nos produits sont</h2>
 
-    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 text-center">
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 text-center mb-[70px]">
       <div class="flex flex-col items-center">
         <img src="./image/Vector.png" alt="" class="w-[50px] h-[50px]" />
         <p>Certifié ANOR</p>

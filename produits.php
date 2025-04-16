@@ -42,7 +42,7 @@ try {
             <?php foreach ($stmt->fetchAll() as $k => $v) { ?>
                 <div class="border border-zinc-200 rounded-xl p-5 w-full max-w-[350px] bg-white shadow-md transition hover:shadow-lg">
                     <div class="overflow-hidden rounded-md">
-                        <img src="upload/<?= $v["photos"] ?>" alt="<?= $v["noms"] ?>" class="w-full h-[250px] object-cover rounded-md">
+                        <img src="upload/<?= $v["photos"] ?>" alt="<?= $v["noms"] ?>" class="w-full h-[450px] object-cover rounded-md">
                     </div>
                     <h4 class="text-xl font-bold mt-3"><?= $v["noms"] ?></h4>
                     <h5 class="text-zinc-500 font-light mt-1">Prix : <?= $v["prix"] ?>f</h5>

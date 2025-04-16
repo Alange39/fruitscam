@@ -23,7 +23,7 @@
       <!-- Slide 1 -->
       <div class="min-w-full h-full  relative">
          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center  px-4">
-          <p class="text-[#ACA9AC] text-3xl sm:text-3xl  font-bold mb-4">Fruitscam est une entreprise innovante spécialisée dans la fabrication de jus de fruit naturels de haute qualité.
+          <p class="text-[#ACA9AC] text-3xl sm:text-3xl  font-bold mb-4">Fruitscam sarl est une entreprise innovante spécialisée dans la fabrication de jus de fruit naturels de haute qualité.
           </p>
           <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4"> Nos valeurs d’authenticité et de durabilité guident   </p>
           <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">notre vision, avec un fort engagement envers la satisfaction client. </p>
@@ -60,7 +60,7 @@
           <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center  px-4">
           <p class="text-[#ACA9AC] text-2xl sm:text-3xl  font-bold mb-4">Durabilite:
           </p>
-          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">Fruitscam s'engage à réduire son impact environnemental en adoptant des pratiques de production écoresponsables et en utilisant des emballages recyclables. Chaque geste compte pour protéger notre planète. </p>
+          <p class="text-[#ACA9AC] text-2xl sm:text-2xl  font-bold mb-4">Fruitscam sarl s'engage à réduire son impact environnemental en adoptant des pratiques de production écoresponsables et en utilisant des emballages recyclables. Chaque geste compte pour protéger notre planète. </p>
         </div>
         <img src="assets/images/WhatsApp Image 2025-03-28 à 17.52.32_f84f300d.jpg" alt="Image de bouteilles" class="w-full h-full object-cover" />
         <!-- Boutons en bas de l'image avec décalage de 75px -->
@@ -163,16 +163,16 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
 
   <section class="flex flex-wrap max-md:gap-[30px] gap-[130px] justify-center pt-[40px] max-md:px-[10px]">
 
-  <div class="justify-center text-justify ">
+  <div class="justify-center  ">
       <img src="assets/images/heart (1) 1.png" alt="" class="h-[20px] w-[20px] mx-auto">
-      <p class="pt-[10px] font-bold text-center">Passion</p>
+      <p class="pt-[10px] font-bold text-center">crainte de Dieu</p>
       <p class="text-xs pt-[8px] w-[220px] mx-auto">
         Cette passion pour le jus naturel ne se limite pas seulement à la production ; elle se ressent également dans l'interaction avec nos clients, à qui ils transmettent leur amour du produit. Pour nous, chaque gorgée est le reflet d'un travail d'équipe, d'une vision commune et d'une volonté de partager le meilleur de la nature.
       </p>
     </div>
 
 
-    <div class="text-justify justify-center">
+    <div class=" justify-center">
       <img src="assets/images/Vector (1).png" alt="" class="h-[20px] w-[20px] mx-auto">
       <p class="pt-[10px] font-bold text-center">Création des Richesses</p>
       <p class="text-xs pt-[8px] w-[165px] mx-auto"> Chez Fruitscam, nous croyons 
@@ -181,11 +181,11 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
     </div>
 
 
-    <div class="justify-center text-justify ">
+    <div class="">
       <img src="assets/images/Group.png" alt="" class="h-[20px] w-[20px] mx-auto">
-      <p class="pt-[10px] font-bold text-center">Respect</p>
+      <p class="pt-[10px] font-bold text-center">Esprit d'equipe</p>
       <p class="text-xs pt-[8px] w-[220px] mx-auto">
-        Le respectLe respect est une valeur fondamentale au sein de l'entreprise Fruitscam. Il constitue un outil essentiel pour garantir un environnement de travail harmonieux et productif. En cultivant le respect entre collègues, nous favorisons une communication ouverte et une collaboration efficace. 
+        Le respect est une valeur fondamentale au sein de l'entreprise Fruitscam. Il constitue un outil essentiel pour garantir un environnement de travail harmonieux et productif. En cultivant le respect entre collègues, nous favorisons une communication ouverte et une collaboration efficace. 
     </div>
   </section>
   </section>
@@ -215,11 +215,11 @@ Cette vigilance constante garantit des produits sûrs et de haute qualité, offr
     <img src="image/photo-DG.jpg" alt="" class="max-md:h-[230px] h-[188px] max-md:w-[190px]  w-[170px] max-md:rounded-none rounded-full  relative top-[100px]">
   </div>
   <section class="bg-green-600 text-white text-center text-justify justify-center px-[100px] pt-[100px] pb-[80px]">
-    <p class="mt-[20px]">  Bienvenue chez Fruitscam ! </p>
+    <p class="mt-[20px]">  Bienvenue chez Fruitscam sarl ! </p>
 <p>
 Chez Fruitscam, nous croyons en l'importance de l'innovation et de la durabilité. Notre mission est de fournir des produits de qualité tout en respectant notre environnement. Nous nous engageons à adopter des pratiques écoresponsables et à soutenir les communautés locales.   Notre équipe, passionnée et dévouée, travaille chaque jour pour garantir que nos clients reçoivent le meilleur. En valorisant le respect et la collaboration, nous créons un environnement de travail positif et dynamique.
 Nous vous invitons à explorer notre univers et à rejoindre notre parcours vers un avenir plus durable. Merci de faire partie de notre aventure ! <br>
-Cordialement, <br> BAYEMI Francoise <br> Fruitscam
+Cordialement, <br> BAYEMI Francoise <br> Fruitscam sarl
         </p>
   </section>
   <script>
